@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "extracted_zip_launch": true,
+  "working_directory_outside_source": true,
+  "native_window_visible": true,
+  "closed_by_native_WM_CLOSE": true,
+  "exit_code": 0,
+  "sqlite_integrity": "ok",
+  "synthetic_demo_not_persisted_as_observation": true,
+  "executable_sha256": "109994f3c3057f6cf620d7b0b823617c6ae52c9101279aa7b9cf884c08aa32d6",
+  "elapsed_s": 6.578860900001018
+}

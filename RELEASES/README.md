@@ -1,7 +1,7 @@
-# Development artifacts
+# Experimental releases
 
-Version: 0.1.0-alpha.1. Suggested eventual title: ATOMVERSE AI 0.1.0-alpha.1 | Genesis of the Computational Universe.
+Current target: 0.2.0-alpha.1 — The Living Universe. Mission 002 explicitly authorizes a public prerelease after actual packaged acceptance and ZIP integrity checks. See EVIDENCE/MISSION-002-FINAL-VERIFICATION.json for completed publication readback.
 
-The verified local artifact is dist/ATOMVERSE-AI/ATOMVERSE-AI.exe with its complete adjacent directory. See EVIDENCE/BUILD-MANIFEST.json for the executable hash and tested source files. A portable ZIP may be generated locally from that directory; do not commit binary dependencies or private runtime data to Git.
+The current portable folder is dist/releases/0.2.0-alpha.1/ATOMVERSE-AI/. The versioned ZIP is dist/ATOMVERSE-AI-0.2.0-alpha.1-win-x64.zip. Keep the complete folder together. Build manifests and portable instructions are in the matching version directory here. Runtime databases, raw reports and dependency binaries are excluded from Git source commits.
 
-No GitHub binary release has been published. Packaging alone is not release approval. Resolve project licensing, complete third-party distribution review, and expand Windows/platform validation before a broader release.
+The original 0.1 executable/ZIP and evidence remain intact; its documentation is archived under 0.1.0-alpha.1/. The owner has not selected a general source license. Third-party notices and replaceable LGPL libraries accompany the owner-authorized experimental binary. It is unsigned, and verification is specific to the measured Windows workstation, not a broad platform certification.

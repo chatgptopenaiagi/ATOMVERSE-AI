@@ -1,0 +1,103 @@
+{
+  "mission": "002",
+  "version": "0.2.0-alpha.1",
+  "status": "LOCAL_ACCEPTANCE_PASS",
+  "publication": {
+    "status": "PENDING_REMOTE_READBACK"
+  },
+  "acceptance": {
+    "mission001_preserved": true,
+    "automatic_live_cpu_memory": true,
+    "gpu_provenance": true,
+    "real_windows_process_relationships": true,
+    "live_measurements_drive_graphics": true,
+    "persisted_history_and_replay": true,
+    "scientific_categories_distinct": true,
+    "optional_integrations_fail_gracefully": true,
+    "bounded_observer_overhead_measured": true,
+    "automated_and_packaged_tests_pass": true,
+    "windows_executable_launches": true,
+    "portable_zip_integrity": true,
+    "documentation_and_evidence": true,
+    "public_source_verified": false
+  },
+  "automated_tests": 79,
+  "packaged_gui": {
+    "exit_code": 0,
+    "executable_sha256": "109994f3c3057f6cf620d7b0b823617c6ae52c9101279aa7b9cf884c08aa32d6",
+    "all_exported_records_match_sqlite": true,
+    "legacy_records_preserved": 44,
+    "no_surviving_owned_processes": true,
+    "observed_child_processes": 9,
+    "sqlite_integrity": "ok",
+    "sqlite_version": 2
+  },
+  "packaged_ai": {
+    "status": "PASS",
+    "elapsed_s": 44.107456799996726,
+    "observer_samples": 43
+  },
+  "artifact": {
+    "executable_sha256": "109994f3c3057f6cf620d7b0b823617c6ae52c9101279aa7b9cf884c08aa32d6",
+    "zip_sha256": "4db1f2cec468e4adef3252ff71b9cba0ad5caa9a2ddf49c4d7d33c0a026767d2",
+    "zip_bytes": 50841474,
+    "file_count": 135
+  },
+  "previous_artifact_hashes_unchanged": {
+    "executable": "9c44987308677d9c0478f7cead382bee848eb97fa64505cf669dce4c18a3a7d4",
+    "zip": "b31a924defde98a843e70297dadeab6d2d30f497046bd06f0e679dd396178620"
+  },
+  "selected_existing_installation_checks": [
+    {
+      "component": "ARX/ARX.exe",
+      "sha256": "3a5525b4a76b821fb4132430777b48f3648ae4eb5e065455ba06a2b90a825bba",
+      "matches_mission001_baseline": true
+    },
+    {
+      "component": "Python315/python.exe",
+      "sha256": "d4e19e9a33268fb0ce575a24ab2d4b85972524f1933df008a6befc14dce19fbd",
+      "matches_mission001_baseline": true
+    },
+    {
+      "component": "Scripts/python.exe",
+      "sha256": "5988c9b9e055a9036d449c184bf5d78647b43148f94c912914d36a6efba4af1d",
+      "matches_mission001_baseline": true
+    },
+    {
+      "component": "COG/README.md",
+      "sha256": "28bb114af36d0ae7b69ea60eadcd5762c7c0f4fe337bcc6e41ac2dd051a3a78a",
+      "matches_mission001_baseline": true
+    },
+    {
+      "component": "DRAGONHYDRA/README.md",
+      "sha256": "5800b52e8eed700e6e9d2e2b54c42bbf4f247fbcbca61a00ff9e39cbc8a05282",
+      "matches_mission001_baseline": true
+    },
+    {
+      "component": "CHESS-BOOK-ARENA/pyproject.toml",
+      "sha256": "84602c34b788cf990739b5a58b876e5bfbe2e5b96204d6b849ff1e387854d3ea",
+      "matches_mission001_baseline": true
+    }
+  ],
+  "preservation_scope": "Selected existing executable/source hashes and original artifact hashes; no claim of whole-disk forensic equivalence.",
+  "limitations": [
+    "No reliable CPU temperature sensor, per-process GPU utilization/VRAM or verified disk response time.",
+    "Process observation and visible history are deliberately bounded.",
+    "COG/DRAGONHYDRA real private exports were not tested; source contracts and fixtures were tested.",
+    "Cold Qwen startup exceeded the inference deadline; warmed selected-event inference passed.",
+    "Short baseline/load performance run, not a long-duration soak or cross-hardware certification.",
+    "Unsigned experimental Windows prerelease; project license decision remains with owner."
+  ],
+  "portable_extraction": {
+    "status": "PASS",
+    "extracted_zip_launch": true,
+    "working_directory_outside_source": true,
+    "native_window_visible": true,
+    "closed_by_native_WM_CLOSE": true,
+    "exit_code": 0,
+    "sqlite_integrity": "ok",
+    "synthetic_demo_not_persisted_as_observation": true,
+    "executable_sha256": "109994f3c3057f6cf620d7b0b823617c6ae52c9101279aa7b9cf884c08aa32d6",
+    "elapsed_s": 6.578860900001018
+  }
+}

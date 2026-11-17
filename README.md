@@ -1,7 +1,7 @@
 # ⚛️♾️ ATOMVERSE AI
 ## THE LIVING UNIVERSE OF COMPUTATIONAL INTELLIGENCE
 
-**0.1.0-alpha.1 — working experimental Windows alpha.** The public documentation genesis was completed and remotely verified before development. A native application now demonstrates the full measured-data flow.
+**0.2.0-alpha.1 — The Living Universe.** An experimental native Windows application that turns selected, real computational observations into inspectable visual structures and persistent history. Mission 002 continues the verified Mission 001 foundation.
 
 ATOMVERSE AI is a living computational universe that transforms real hardware telemetry, AI activity, source code, benchmarks and software events into interactive visual structures, measurable simulations and persistent knowledge.
 
@@ -42,36 +42,45 @@ Target: Windows 11 x64, PowerShell 7. Hardware and installed software must be fr
 
 - Interactive projected universe: rotate, pan, zoom, select, pause and adjust rendering quality.
 - Explicit ARX 0.1 report import with schema checks, stable event IDs, units, hashes and field provenance.
-- Requested CPU/RAM/GPU observations; continuous telemetry is opt-in.
+- Opt-in continuous CPU/core, RAM/commit, disk and NVIDIA observation in an isolated worker, with configurable sampling and retention.
+- Process entities identified by PID and creation time, verified parent relationships, resource use, hashed executable identity and supported GPU context membership.
+- Explicit OBSERVED, DERIVED, AI_INTERPRETED, SIMULATED and UNAVAILABLE metadata across views, storage and exports.
 - SQLite history, chronological replay, sortable/searchable measurements, JSON and CSV export.
 - Bounded CPU float-matrix and optional CUDA/PyTorch matrix benchmarks with numerical verification, cancellation and timeout.
-- Clearly isolated demo; selected text and repository metadata intake; optional loopback model API.
+- Clearly isolated demo; selected text/repository metadata intake; versioned COG and DRAGONHYDRA export adapters.
+- Optional local Qwen/Ollama or compatible loopback interpretation, with evidence references, asynchronous execution and cancellation.
 
-![Actual application in observed-data mode](EVIDENCE/real-universe.png)
+![Actual Mission 002 application with recorded observations](EVIDENCE/MISSION-002-UNIVERSE.png)
 
 ### Launch
 
-On the mission workstation, open **dist/ATOMVERSE-AI/ATOMVERSE-AI.exe**. Keep its entire folder together. Alternatively run scripts/launch.ps1. A new history starts in **DEMO: SYNTHETIC DATA**; use Import ARX / JSON or Sample hardware to switch to observations.
+Download the complete portable ZIP from [v0.2.0-alpha.1](https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/tag/v0.2.0-alpha.1), extract it, and open **ATOMVERSE-AI.exe**. Keep its folder together. On the mission workstation the final package is under **dist/releases/0.2.0-alpha.1/ATOMVERSE-AI/**; `scripts/launch.ps1` selects it when present.
+
+A new history begins in visibly labeled simulation mode. Review Settings, then click **Start live observer**. CPU, RAM, disk, available NVIDIA metrics and permitted process metadata update automatically. Stop live observer ends collection; Pause motion only pauses rendering. Click an entity for its evidence. Use Process Galaxy for relationships, Scientific Data for numbers, and Computational Memory for replay/comparison/integrity checks.
+
+Observation is off at startup. Defaults are 2-second sampling, up to 24 selected processes, 10,000 retained rows and one hour of rolling samples; the row cap may retain less than one hour. Mission 001 and benchmark records are protected. A v1 database gets a backup before additive migration. The previous executable and its original records are preserved.
 
 Source/build instructions and controls: [SOFTWARE/README.md](SOFTWARE/README.md). GPU tests require a separately installed, explicitly selected PyTorch Python. No model, CUDA runtime or SQL Server is required for the standalone CPU/demo application.
 
 ### Verification and scope
 
-**46 automated tests pass.** The actual packaged executable imported 38 events from a fresh ARX report, ran CPU and RTX 3050 CUDA benchmarks, persisted 44 observed records including hardware samples and an intentional error test, replayed events, exported/read back JSON, and exited with no surviving child processes. See [functional tests](EVIDENCE/ATOMVERSE-FUNCTIONAL-TESTS.json), [GUI verification](EVIDENCE/ATOMVERSE-GUI-VERIFICATION.json), [benchmark results](EVIDENCE/ATOMVERSE-BENCHMARK-RESULTS.json), and [build hash](EVIDENCE/BUILD-MANIFEST.json).
+The original 46 tests remain in the expanded suite. Mission 002 verification includes real Windows sampling, migration preservation, process identities, bounded retention, GUI interaction, CPU/GPU benchmarks, packaged execution, export readback and shutdown. See [test results](EVIDENCE/MISSION-002-TEST-RESULTS.json), [performance](EVIDENCE/MISSION-002-PERFORMANCE.json), [packaged GUI verification](EVIDENCE/MISSION-002-GUI-VERIFICATION.json), and [final acceptance and checksums](EVIDENCE/MISSION-002-FINAL-VERIFICATION.json). Those records distinguish actual execution from unavailable or fixture-only checks.
 
-This is a software-painted 3D projection and an experimental engineering tool. Rich physics, the broader benchmark suite, automated regression analysis, full dependency graphs and direct COG/Codex adapters remain future work. The historical Qwen3-Coder model is unavailable at its reported paths; no real local-model inference is claimed. The unsigned build is local; no GitHub binary release has been published.
+This is a software-painted perspective projection and an unsigned experimental prerelease. CPU temperature, reliable per-process GPU utilization/VRAM, disk response-time verification, complete process dependency graphs and causal diagnoses are unavailable. Process observation is deliberately bounded. COG/DRAGONHYDRA adapters were checked against their real source contracts and test fixtures; private production histories were not read.
+
+The installed model is **qwen3.8:27b**, not the historically reported Qwen3-Coder. A warmed local endpoint completed an evidence-linked CPU interpretation; cold-start inference exceeded the deadline in an earlier check. Start your local server separately and configure its loopback endpoint/model. Select a hardware particle for a smaller request. AI answers are labeled hypotheses, stored separately from measurements and never executed. Full non-AI functionality remains available without a model.
 
 Read the [final mission report](ATOMVERSE-FINAL-REPORT.md), [implemented architecture](ATOMVERSE-ARCHITECTURE.md), [event schema](ATOMVERSE-EVENT-SCHEMA.json), [visualization specification](ATOMVERSE-VISUALIZATION-SPEC.md), and [database specification](ATOMVERSE-DATABASE-SCHEMA.md).
 
 ### Data and operator control
 
-Only explicit data sources may be ingested. No private-session interception, keystroke capture, browser scraping, credentials, or unrelated personal content. Demo mode must display **DEMO: SYNTHETIC DATA**. Observations, calculations, AI interpretations, and simulated rendering properties remain distinct.
+Only explicit sources are ingested. No private-session interception, command-line capture, keystroke capture, browser contents, credentials or unrelated personal files. Simulation is visibly labeled. Observations, calculations, AI interpretations and rendering properties remain distinct. Local process names and operator-selected text may be private; review exports before sharing.
 
 Public commits contain reviewed source and sanitized evidence. Raw local reports, models, databases, credentials, and workstation-specific paths belong outside version control.
 
 ### Development status
 
-Stage 1: complete and remotely verified. Stage 2: the first packaged vertical slice is verified; expansion remains on the roadmap. See [CHANGELOG](CHANGELOG.md) and [evidence index](EVIDENCE/README.md).
+Mission 001 documentation is archived under [RELEASES/0.1.0-alpha.1](RELEASES/0.1.0-alpha.1), and its evidence remains intact. Mission 002 results and remaining work are recorded in the final report, [CHANGELOG](CHANGELOG.md), and [roadmap](ROADMAP.md).
 
 Operating principle: **INGEST → CLASSIFY → MEASURE → TRANSFORM → VISUALIZE → REMEMBER → LEARN**  
 Engineering principle: **DISCOVER → DESIGN → BUILD → TEST → VERIFY → IMPROVE**

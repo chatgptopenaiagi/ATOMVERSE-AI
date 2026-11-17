@@ -1,0 +1,175 @@
+{
+  "cold_start": {
+    "timestamp_utc": "2026-11-17T14:26:25.976Z",
+    "model": "qwen3.8:27b",
+    "model_downloaded": false,
+    "inference_cpu_only_requested": true,
+    "model_files_present": true,
+    "server_models": [
+      "qwen3.8:27b"
+    ],
+    "status": "UNAVAILABLE",
+    "error": "TimeoutError: timed out",
+    "owned_server_stopped": true
+  },
+  "warmed_endpoint_driver": {
+    "timestamp_utc": "2026-11-17T14:51:30.442Z",
+    "model": "qwen3.8:27b",
+    "model_downloaded": false,
+    "inference_cpu_only_requested": true,
+    "model_files_present": true,
+    "server_models": [
+      "qwen3.8:27b"
+    ],
+    "preload_s": 13.884193800000503,
+    "preload_done": true,
+    "status": "PASS",
+    "elapsed_s": 45.0355825000006,
+    "packaged_gui_verified": true,
+    "owned_server_stopped": true
+  },
+  "packaged_application": {
+    "status": "PASS",
+    "error": null,
+    "packaged_executable": true,
+    "elapsed_s": 44.107456799996726,
+    "model": "qwen3.8:27b",
+    "interpretations": [
+      {
+        "calculated": {
+          "confidence": 1.0,
+          "intensity": 0.0,
+          "metric": null,
+          "scale": 1.0
+        },
+        "category": "interpretation",
+        "component": "ai",
+        "configuration": {},
+        "data_kind": "interpretation",
+        "event_id": "153adb55-e1e7-45ae-9164-6357eb637f95",
+        "message": "Event 315a28b7-54fb-40c8-886c-ef4508e061ff records a derived CPU utilization of 23.18%.",
+        "metrics": {},
+        "provenance": {
+          "endpoint": "http://127.0.0.1:11437",
+          "event_ids": [
+            "315a28b7-54fb-40c8-886c-ef4508e061ff"
+          ],
+          "hypothesis": true,
+          "model": "qwen3.8:27b",
+          "question": "Give one short sentence about this CPU measurement. Cite its event ID. Do not infer causes.",
+          "response_truncated": false,
+          "summary_policy": "aggregate-hardware-only/1"
+        },
+        "schema_version": "1.1",
+        "scientific": {
+          "classification": "AI_INTERPRETED",
+          "entity": {},
+          "entity_id": "ai:interpretation",
+          "metric_metadata": {},
+          "relationships": [],
+          "retention": "protected",
+          "session_id": "",
+          "unavailable": {}
+        },
+        "source": "local-model",
+        "status": "INFO",
+        "timestamp_utc": "2026-11-17T14:52:33.341Z",
+        "visual": {
+          "color": "#65baff",
+          "visual_energy": 0.0
+        }
+      }
+    ],
+    "source_observations": [
+      {
+        "calculated": {
+          "confidence": 1.0,
+          "intensity": 0.23177083333333331,
+          "lower": 0,
+          "metric": "utilization_pct",
+          "scale": 1.0,
+          "unit": "%",
+          "upper": 100,
+          "value": 23.177083333333332
+        },
+        "category": "observation",
+        "component": "cpu",
+        "configuration": {
+          "sampling_interval_s": 1.0
+        },
+        "data_kind": "observed",
+        "event_id": "315a28b7-54fb-40c8-886c-ef4508e061ff",
+        "message": "",
+        "metrics": {
+          "frequency_mhz": {
+            "unit": "MHz",
+            "value": 3901.0
+          },
+          "logical_processors": {
+            "unit": "count",
+            "value": 12
+          },
+          "utilization_pct": {
+            "unit": "%",
+            "value": 23.177083333333332
+          }
+        },
+        "provenance": {
+          "api": "GetSystemTimes / NtQuerySystemInformation via psutil",
+          "psutil_version": "7.2.2"
+        },
+        "schema_version": "1.1",
+        "scientific": {
+          "classification": "DERIVED",
+          "entity": {
+            "logical_index": -1,
+            "type": "cpu"
+          },
+          "entity_id": "system:cpu",
+          "metric_metadata": {
+            "frequency_mhz": {
+              "classification": "OBSERVED"
+            },
+            "logical_processors": {
+              "classification": "OBSERVED"
+            },
+            "utilization_pct": {
+              "classification": "DERIVED",
+              "formula": "clamp(100 * (delta_total_s - delta_idle_s) / delta_total_s, 0, 100)",
+              "inputs": {
+                "current_user_system_idle": [
+                  26080.59375,
+                  19363.937500000007,
+                  211324.6875
+                ],
+                "delta_idle_s": 9.21875,
+                "delta_total_s": 12.0,
+                "previous_user_system_idle": [
+                  26079.453125,
+                  19362.296875000007,
+                  211315.46875
+                ]
+              }
+            }
+          },
+          "relationships": [],
+          "retention": "rolling",
+          "session_id": "51d9e050-d629-4e17-9862-6b980c6e90a5",
+          "unavailable": {
+            "temperature_c": "No verified CPU temperature sensor"
+          }
+        },
+        "source": "psutil.cpu_times/Windows",
+        "status": "INFO",
+        "timestamp_utc": "2026-11-17T14:51:51.964Z",
+        "visual": {
+          "color": "#65baff",
+          "visual_energy": 0.23177083
+        }
+      }
+    ],
+    "observer_samples": 43,
+    "rendered_frames": 59,
+    "clean_shutdown": true
+  }
+}

@@ -26,7 +26,7 @@ METRIC_RANGES = {
     'logical_processors': (0, 32), 'total_bytes': (0, 128 * 1024**3),
     'memory_mib': (0, 16384), 'file_count': (0, 2000), 'characters': (0, 10000),
 }
-UNITS = {'%', 'ms', 's', 'bytes', 'MiB', 'count', 'C', 'GFLOP/s', 'ratio'}
+UNITS = {'%', 'ms', 's', 'bytes', 'MiB', 'count', 'C', 'GFLOP/s', 'ratio', 'W', 'MHz', 'bytes/s'}
 
 
 class ValidationError(ValueError):
@@ -97,6 +97,9 @@ def make_event(source, category, component, metrics=None, *, status='INFO', kind
 def validate_event(event):
     if not isinstance(event, dict):
         raise ValidationError('event must be an object')
+    if event.get('schema_version') == '1.1':
+        from .science import validate_scientific
+        return validate_scientific(event)
     required = {'schema_version', 'event_id', 'timestamp_utc', 'source', 'category', 'component',
                 'status', 'data_kind', 'metrics', 'message', 'provenance', 'configuration', 'calculated', 'visual'}
     if set(event) != required:
@@ -174,10 +177,11 @@ def export_events(path, events):
     if Path(path).suffix.lower() == '.csv':
         out = io.StringIO(newline='')
         writer = csv.writer(out)
-        writer.writerow(['event_id', 'timestamp_utc', 'source', 'component', 'category', 'status', 'data_kind', 'metric', 'value', 'unit'])
+        writer.writerow(['event_id', 'timestamp_utc', 'source', 'component', 'category', 'status', 'data_kind', 'metric', 'value', 'unit', 'classification', 'provenance_json'])
         for e in validated:
             for name, m in (e['metrics'] or {'': {'value': '', 'unit': ''}}).items():
-                row = [e[k] for k in ('event_id', 'timestamp_utc', 'source', 'component', 'category', 'status', 'data_kind')] + [name, m['value'], m['unit']]
+                from .science import classification
+                row = [e[k] for k in ('event_id', 'timestamp_utc', 'source', 'component', 'category', 'status', 'data_kind')] + [name, m['value'], m['unit'], classification(e, name), json.dumps({'provenance': e['provenance'], 'scientific': e.get('scientific')}, sort_keys=True)]
                 writer.writerow(["'" + v if isinstance(v, str) and v.startswith(('=', '+', '-', '@', '\t', '\r')) else v for v in row])
         atomic_write(path, out.getvalue())
     else:
@@ -194,13 +198,14 @@ class Memory:
         self.db.execute('PRAGMA max_page_count=65536')
         self.db.execute('PRAGMA busy_timeout=3000')
         version = self.db.execute('PRAGMA user_version').fetchone()[0]
-        if version not in (0, 1):
+        if version not in (0, 1, 2):
             self.db.close()
             raise ValidationError('unsupported database schema version')
         self.db.execute('CREATE TABLE IF NOT EXISTS events (id TEXT PRIMARY KEY, time TEXT NOT NULL, kind TEXT NOT NULL, category TEXT NOT NULL, body TEXT NOT NULL)')
         self.db.execute('CREATE INDEX IF NOT EXISTS event_time ON events(time, id)')
-        self.db.execute('PRAGMA user_version=1')
         self.db.commit()
+        from .storage import migrate
+        migrate(self.db, self.path, version)
 
     def add(self, events):
         if len(events) > MAX_EVENTS:
@@ -218,7 +223,12 @@ class Memory:
                     continue
                 if count + inserted >= self.limit:
                     raise ValidationError('memory limit reached; export history and choose a new database')
-                self.db.execute('INSERT INTO events VALUES (?,?,?,?,?)', (e['event_id'], e['timestamp_utc'], e['data_kind'], e['category'], body))
+                s = e.get('scientific', {})
+                if s.get('classification') == 'AI_INTERPRETED' or e['category'] == 'comparison':
+                    for reference in e['provenance'].get('event_ids', [])[:20]:
+                        self.db.execute('UPDATE events SET ephemeral=0 WHERE id=?', (reference,))
+                self.db.execute('INSERT INTO events(id,time,kind,category,body,session,entity,classification,ephemeral) VALUES (?,?,?,?,?,?,?,?,?)',
+                    (e['event_id'], e['timestamp_utc'], e['data_kind'], e['category'], body, s.get('session_id', ''), s.get('entity_id', ''), s.get('classification', ''), int(s.get('retention') == 'rolling')))
                 inserted += 1
         return inserted
 

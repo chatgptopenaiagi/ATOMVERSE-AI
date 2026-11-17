@@ -1,32 +1,13 @@
-# Implemented visualization specification
+# Measured universe mapping
 
-The nucleus represents the workstation; eight rings represent CPU, GPU, memory, storage, AI, code, database and Guardian. All rings are navigational structures. Data particles exist only for events in the current mode. Background stars are decorative and carry no measurements.
+The workstation nucleus and eight component orbits remain. CPU cores are labeled nodes; processes occupy the code orbit. RAM/storage fill percentages affect their structures. NVIDIA device load drives the GPU constellation. Stable entity IDs determine starting positions, so new samples update the same entity.
 
-For the first supported metric in core.METRIC_RANGES:
+Intensity = clamp((value − lower) / (upper − lower), 0, 1). Visual energy = intensity × confidence × display scale. Utilization/fill percentages normalize over 0–100. Rotation uses `phase × visual_energy × 0.42`; radius uses `3 + 5.5 × visual_energy` before projection. The nucleus uses mean visible energy. These are dimensionless rendering properties, not physical energy. Display settings never alter measurements.
 
-n = clamp((value − lower) / (upper − lower), 0, 1)
+Schema 1.1 uses blue OBSERVED circles, green DERIVED circles, purple AI_INTERPRETED squares, amber SIMULATED squares and gray UNAVAILABLE circles. Failures retain red. Mixed observed/derived records expose each metric's classification in tables and the inspector. Legacy 1.0 retains its mapping and explicit data-kind classification. Demo, live, recorded and replay have persistent distinct badges.
 
-energy = round(n × confidence × stored_scale, 8)
+Dotted connections exist only for recorded relationships with visible endpoints. Full targets and source APIs remain inspectable when an endpoint is outside the scene. CPU/memory use, parent identity, hashed executable identity and supported NVIDIA context membership are separate types. No dependency is inferred from coincidental activity. Historical and terminated process states are explicit.
 
-Missing metrics give energy 0; the information particle remains selectable. Status is never used to invent a successful measurement. Failed results are red, skipped/cancelled results grey, verified benchmarks gold, other successful results green, and informational records blue.
+Selecting a particle reveals ID, source, timestamp, values, units, status, formulas, unavailable reasons, relationships and up to 12 retained entity-history records. Tables support sorting, text/class/outcome filtering and a start-time filter. Replay offers ordered timeline navigation. Drag rotates, right drag pans, wheel zooms; arrows and +/- also navigate. Pause motion leaves observation running; Stop live observer ends collection.
 
-| Metric | Unit | Normalization interval |
-|---|---|---|
-| utilization_pct, used_pct | % | 0–100 |
-| duration_ms | ms | 0–5000 |
-| throughput_gflops | GFLOP/s | 0–500 |
-| logical_processors | count | 0–32 |
-| total_bytes | bytes | 0–128 GiB |
-| memory_mib | MiB | 0–16384 |
-| file_count | count | 0–2000 |
-| characters | count | 0–10000 |
-
-Priority follows the table order (utilization before used_pct). Intervals are display policy, not performance targets. Capacity and duration scores are labeled as such; they do not imply utilization or better performance.
-
-Let v = event energy × operator intensity. Base particle radius = 3 + 5.5v, and angular speed = 0.42v radians/second. Perspective scaling affects apparent radius. Stable SHA-256 event seeds determine initial angle and bounded radial offset. Replay reconstructs event selection and score; camera time is artistic and does not claim deterministic pixel-identical historical physics.
-
-Controls: left drag rotates; right drag pans; mouse wheel or +/− zooms; arrows rotate; Home resets camera; Space pauses/resumes motion; clicking selects evidence. Replay uses original sorted timestamps/IDs and advances one event every 400 ms, explicitly compressing time.
-
-Default 256 particles/30 FPS. Bounds: 32–512 and 15/30/60 FPS. Rendering reduces detail after sustained frame work above 85% of its interval. Benchmark display drops to 15 FPS. This software painter has no GPU instancing; a future renderer can use the same event contract.
-
-Modes are visibly exclusive: DEMO: SYNTHETIC DATA, REAL DATA: OBSERVED, REPLAY: RECORDED EVENTS. Live mode includes retained observed records; the source timestamp shows their age.
+Rendering is native Qt software painting with perspective projection. Cached orbit paths, 15/30/60 fps caps, up to 512 particles and adaptive reduction bound work. Visible coverage and skipped display batches are reported. No artistic effect is presented as a measured quantity.

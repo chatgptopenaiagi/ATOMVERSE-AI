@@ -8,6 +8,7 @@ from PySide6.QtCore import Qt, QPointF, QTimer, Signal
 from PySide6.QtGui import QColor, QFont, QLinearGradient, QPainter, QPainterPath, QPen, QRadialGradient
 from PySide6.QtWidgets import QWidget
 from .core import ORBITS
+from .science import classification, COLORS
 
 
 class Universe(QWidget):
@@ -75,12 +76,18 @@ class Universe(QWidget):
             p.setBrush(QColor(136, 175, 218, 75))
             p.drawEllipse(QPointF(x * self.width(), y * self.height()), r, r)
         colors = ['#68d5f7', '#aa91ff', '#74e2b1', '#a5b9d3', '#f29bdb', '#ffca78', '#a5def4', '#ff7c94']
+        camera = (self.width(), self.height(), self.yaw, self.tilt, self.zoom, self.pan.x(), self.pan.y())
+        if getattr(self, '_orbit_camera', None) != camera:
+            self._orbit_camera = camera; self._orbit_paths = []
+            for i in range(len(ORBITS)):
+                path = QPainterPath()
+                for step in range(81):
+                    point, _ = self.project(90 + i * 32, step * math.tau / 80, i)
+                    path.moveTo(point) if step == 0 else path.lineTo(point)
+                self._orbit_paths.append(path)
         for i, name in enumerate(ORBITS):
             radius = 90 + i * 32
-            path = QPainterPath()
-            for step in range(121):
-                point, _ = self.project(radius, step * math.tau / 120, i)
-                path.moveTo(point) if step == 0 else path.lineTo(point)
+            path = self._orbit_paths[i]
             col = QColor(colors[i]); col.setAlpha(60)
             p.setPen(QPen(col, 1))
             p.setBrush(Qt.BrushStyle.NoBrush)
@@ -105,12 +112,13 @@ class Universe(QWidget):
         rendered = self.events[-min(self.particle_limit, self.effective_limit):]
         for e in rendered:
             orbit = ORBITS.index(e['component'])
-            seed = int(hashlib.sha256(e['event_id'].encode()).hexdigest()[:8], 16)
+            seed = int(hashlib.sha256((e.get('scientific', {}).get('entity_id') or e['event_id']).encode()).hexdigest()[:8], 16)
             v = e['visual']['visual_energy'] * self.intensity
             angle = seed / 0xffffffff * math.tau + self.phase * v * 0.42
             point, scale = self.project(90 + orbit * 32 + ((seed % 19) - 9), angle, orbit)
             radius = (3.0 + 5.5 * v) * scale
-            color = QColor(e['visual']['color'])
+            cls = classification(e)
+            color = QColor(COLORS[cls] if 'scientific' in e and e['status'] != 'FAIL' else e['visual']['color'])
             if v > 0:
                 for j in (3, 2, 1):
                     tail, _ = self.project(90 + orbit * 32 + ((seed % 19) - 9), angle - j * 0.025 * v, orbit)
@@ -118,11 +126,26 @@ class Universe(QWidget):
                     p.setPen(Qt.PenStyle.NoPen); p.setBrush(faded)
                     p.drawEllipse(tail, radius + j * 1.3, radius + j * 1.3)
             p.setPen(Qt.PenStyle.NoPen); p.setBrush(color)
-            p.drawEllipse(point, radius, radius)
+            if cls in ('SIMULATED', 'AI_INTERPRETED'):
+                p.drawRect(point.x() - radius, point.y() - radius, radius * 2, radius * 2)
+            else:
+                p.drawEllipse(point, radius, radius)
+            entity = e.get('scientific', {}).get('entity', {})
+            if entity.get('type') == 'cpu_core':
+                p.setPen(QColor('#83cde5')); p.setFont(QFont('Segoe UI', 7))
+                p.drawText(point + QPointF(8, -5), f"C{entity['logical_index']}")
             if e['event_id'] == self.selected_id:
                 p.setPen(QPen(QColor('#ffffff'), 1.4)); p.setBrush(Qt.BrushStyle.NoBrush)
                 p.drawEllipse(point, radius + 6, radius + 6)
             self.hits.append((point, max(9, radius + 3), e))
+        positions = {e.get('scientific', {}).get('entity_id'): point for point, _, e in self.hits if e.get('scientific', {}).get('entity_id')}
+        self.relationship_count = 0
+        for point, _, e in self.hits:
+            for rel in e.get('scientific', {}).get('relationships', []):
+                target = positions.get(rel['target'])
+                if target is not None:
+                    p.setPen(QPen(QColor(115, 190, 200, 65), 0.8, Qt.PenStyle.DotLine))
+                    p.drawLine(point, target); self.relationship_count += 1
         p.setPen(QColor('#7f95af')); p.setFont(QFont('Segoe UI', 9))
         p.drawText(18, self.height() - 34, 'DRAG TO ORBIT   ·   RIGHT DRAG TO PAN   ·   SCROLL TO ZOOM')
         p.drawText(18, self.height() - 15, f'{len(rendered)} rendered / {len(self.events)} data particles  ·  motion & radius = derived score')

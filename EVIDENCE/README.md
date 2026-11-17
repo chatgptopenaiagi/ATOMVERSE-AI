@@ -1,5 +1,7 @@
 # Evidence index
 
+Mission 002 reports use the `MISSION-002-` prefix; Mission 001 evidence is preserved. Discovery precedes source changes. New tests cover real Windows APIs and explicitly labeled fixtures. Packaged GUI/performance reports include external watchdog and SQLite/export readback checks. AI evidence separates cold-start timeout from warmed-endpoint verification. Final acceptance records package checksums, preservation scope and publication status. Raw histories remain private and ignored.
+
 Public evidence is allowlisted and reviewed. Raw ARX reports, local inventories, execution work directories and databases remain under ignored .local/ or application data. Screenshots show only the ATOMVERSE window.
 
 ## Stage 1

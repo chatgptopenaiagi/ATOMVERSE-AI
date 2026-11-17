@@ -1,0 +1,408 @@
+{
+  "status": "PASS",
+  "tests": 79,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_s": 8.834,
+  "mission001_tests_preserved": 46,
+  "cases": [
+    {
+      "name": "test_energy_is_reproducible_and_dimensionless",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_clamping_and_missing_metrics",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[nan]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[inf]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[-1]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[101]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[True]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[50]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_schema_rejections[schema_version-2.0]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_schema_rejections[status-SUCCESS]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_schema_rejections[data_kind-real-ish]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_schema_rejections[component-network]",
+      "module": "TESTS.test_core",
+      "seconds": 0.002
+    },
+    {
+      "name": "test_schema_rejections[timestamp_utc-2026-01-01T00:00:00]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_schema_rejections[message-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]",
+      "module": "TESTS.test_core",
+      "seconds": 0.002
+    },
+    {
+      "name": "test_wrong_units_and_forged_visual",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_database_immutable_and_reopen",
+      "module": "TESTS.test_core",
+      "seconds": 0.049
+    },
+    {
+      "name": "test_transaction_rolls_back_on_limit",
+      "module": "TESTS.test_core",
+      "seconds": 0.036
+    },
+    {
+      "name": "test_replay_order_does_not_mutate",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_json_roundtrip_and_csv_formula_protection",
+      "module": "TESTS.test_core",
+      "seconds": 0.021
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[malformed]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[nonfinite]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[encoding]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[oversized]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_arx_measurements_provenance_and_idempotency",
+      "module": "TESTS.test_core",
+      "seconds": 0.002
+    },
+    {
+      "name": "test_arx_rejects_new_contract[0.2]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_arx_rejects_new_contract[1.0]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_arx_rejects_new_contract[None]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_arx_report_preserved",
+      "module": "TESTS.test_core",
+      "seconds": 0.015
+    },
+    {
+      "name": "test_demo_never_claims_observation",
+      "module": "TESTS.test_core",
+      "seconds": 0.011
+    },
+    {
+      "name": "test_explicit_source_metadata_ignores_private_tree",
+      "module": "TESTS.test_core",
+      "seconds": 0.005
+    },
+    {
+      "name": "test_python_discovery_and_invalid_target",
+      "module": "TESTS.test_core",
+      "seconds": 0.116
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[https://example.com/v1]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[http://127.0.0.1.evil/v1]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[http://user:pass@localhost/v1]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[http://localhost/v1?secret=yes]",
+      "module": "TESTS.test_core",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_cpu_worker_actual_output_and_invalid_workload",
+      "module": "TESTS.test_core",
+      "seconds": 0.473
+    },
+    {
+      "name": "test_published_json_schema_matches_generated_events",
+      "module": "TESTS.test_core",
+      "seconds": 0.178
+    },
+    {
+      "name": "test_loopback_model_contract_and_interpretation_label",
+      "module": "TESTS.test_core",
+      "seconds": 0.548
+    },
+    {
+      "name": "test_gui_sources_and_mode_isolation",
+      "module": "TESTS.test_gui",
+      "seconds": 0.556
+    },
+    {
+      "name": "test_gui_camera_selection_pause_and_settings",
+      "module": "TESTS.test_gui",
+      "seconds": 0.307
+    },
+    {
+      "name": "test_gui_benchmark_cancel_persists_accurate_state",
+      "module": "TESTS.test_gui",
+      "seconds": 0.454
+    },
+    {
+      "name": "test_gui_replay_filter_and_shutdown",
+      "module": "TESTS.test_gui",
+      "seconds": 0.212
+    },
+    {
+      "name": "test_gui_hard_deadline_failure",
+      "module": "TESTS.test_gui",
+      "seconds": 0.365
+    },
+    {
+      "name": "test_gui_shutdown_terminates_active_worker",
+      "module": "TESTS.test_gui",
+      "seconds": 0.333
+    },
+    {
+      "name": "test_failed_executable_is_recorded_as_failure",
+      "module": "TESTS.test_gui",
+      "seconds": 0.388
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[OBSERVED]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.05
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[DERIVED]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.047
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[SIMULATED]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.044
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[AI_INTERPRETED]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.046
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[UNAVAILABLE]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.046
+    },
+    {
+      "name": "test_published_scientific_schema_matches_real_collector",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.058
+    },
+    {
+      "name": "test_invalid_science_rejected[missing_metadata]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.002
+    },
+    {
+      "name": "test_invalid_science_rejected[fake_derived]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[ai_measurement]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[sim_observed]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[bad_relation]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[bad_unit]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[incomplete_process]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[incomplete_core]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_counter_deltas_and_reset",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_configuration_bounds[config0]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_configuration_bounds[config1]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_configuration_bounds[config2]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_configuration_bounds[config3]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_configuration_bounds[config4]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.001
+    },
+    {
+      "name": "test_migration_preserves_bytes_and_backup",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.057
+    },
+    {
+      "name": "test_retention_protects_legacy_and_linked_evidence",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.08
+    },
+    {
+      "name": "test_retention_row_limit_and_replay_immutable",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.144
+    },
+    {
+      "name": "test_retention_cannot_exceed_configured_cap_with_protected_rows",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.067
+    },
+    {
+      "name": "test_comparison_requires_comparable_source_and_records_inputs",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.003
+    },
+    {
+      "name": "test_ai_summary_excludes_process_metadata_and_rejects_remote",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.002
+    },
+    {
+      "name": "test_local_ai_protocol_preserves_classification_and_provenance[]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.525
+    },
+    {
+      "name": "test_local_ai_protocol_preserves_classification_and_provenance[/v1]",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.519
+    },
+    {
+      "name": "test_optional_adapters_versioned_and_idempotent",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.055
+    },
+    {
+      "name": "test_real_windows_sampling_and_permissions",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.068
+    },
+    {
+      "name": "test_real_process_parent_identity_and_termination",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.197
+    },
+    {
+      "name": "test_gpu_failure_is_explicit_and_other_sources_continue",
+      "module": "TESTS.test_mission002",
+      "seconds": 0.007
+    },
+    {
+      "name": "test_live_gui_updates_labels_queue_bounds_and_shutdown",
+      "module": "TESTS.test_mission002",
+      "seconds": 2.296
+    }
+  ],
+  "execution_scope": "Real Windows APIs, process lifecycle and Qt GUI; explicit protocol/adapter fixtures are distinguished by test names.",
+  "exploratory_failure": "An overlapping development test run recorded observer startup timeout. The isolated final full suite passed; no test was removed."
+}

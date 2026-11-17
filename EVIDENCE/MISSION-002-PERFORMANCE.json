@@ -1,0 +1,40 @@
+{
+  "method": "15-second idle-observer phase and 15-second controlled-load phase; three owned 12-second CPU workloads plus bounded CPU/GPU benchmark; sampling 1 s, 24 processes, 30 fps; CPU normalized across logical processors",
+  "phases": {
+    "idle": {
+      "samples": 15,
+      "cpu_pct_system_mean": 2.8613640918633045,
+      "working_set_bytes_max": 169754624,
+      "sample_duration_ms_p95": 103.42769999988377,
+      "scheduling_delay_ms_p95": 13.100500000291504,
+      "paint_ms_mean": 8.187100692462424,
+      "system_cpu_pct_min": 4.036458333333333,
+      "system_cpu_pct_max": 25.78125
+    },
+    "active": {
+      "samples": 15,
+      "cpu_pct_system_mean": 3.6908156695075114,
+      "working_set_bytes_max": 183820288,
+      "sample_duration_ms_p95": 125.9040000004461,
+      "scheduling_delay_ms_p95": 11.3692999984778,
+      "paint_ms_mean": 12.095587711188678,
+      "system_cpu_pct_min": 8.723958333333334,
+      "system_cpu_pct_max": 55.786736020806245
+    }
+  },
+  "gui_tick_delay_ms_p95": 26.011999997717794,
+  "gui_tick_delay_ms_max": 1507.7187000017148,
+  "paint_ms_p95": 19.988099997135578,
+  "frames": 717,
+  "particle_limit": 256,
+  "effective_particle_limit": 256,
+  "queue_capacity": 4,
+  "display_batches_dropped": 0,
+  "scope_notes": [
+    "Idle phase means no injected load; unrelated workstation activity continued.",
+    "Configured rendering cap is 30 fps, temporarily reduced to 15 during benchmarks.",
+    "CPU and RSS cover GUI plus observer, excluding optional benchmark/model workers.",
+    "30-second baseline/load experiment is not a long-duration soak test.",
+    "Maximum GUI tick delay includes synchronous acceptance-driver assertions and export readback; p95 covers the full run."
+  ]
+}

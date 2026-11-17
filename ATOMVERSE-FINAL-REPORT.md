@@ -1,60 +1,50 @@
-# ATOMVERSE AI Mission 001 — final engineering report
+# ATOMVERSE AI — Mission 002 final engineering report
 
-**Version 0.1.0-alpha.1. Experimental Windows vertical slice verified on 2026-11-17.**
+Version: **0.2.0-alpha.1**. Date: **2026-11-17**. Local acceptance: **PASS**. Public-source and prerelease readback are recorded in `EVIDENCE/MISSION-002-FINAL-VERIFICATION.json` after publication.
 
-## Stage 1: completed first
+Mission 002 extends the verified Mission 001 application and preserves the original human vision. Real CPU/core, RAM/commit, disk and available NVIDIA observations now update an interactive universe continuously after visible opt-in. Process entities use PID plus creation time, recorded resource relationships and verified parent identities. Historical and terminated observations remain distinguishable from current samples.
 
-The public repository is [chatgptopenaiagi/ATOMVERSE-AI](https://github.com/chatgptopenaiagi/ATOMVERSE-AI). Its documentation-only genesis commit is 64f3a79938fe52778e207fb6bfa9aba33778662e. GitHub readback verified the default branch, public visibility, README, original human vision and roadmap before application development began. The original twelve concepts and the distinction between physical analogy, proposals, implementation and experiments remain preserved.
+Scientific metadata separates OBSERVED, DERIVED, AI_INTERPRETED, SIMULATED and UNAVAILABLE information throughout event validation, numerical views, visualization, persistence and exports. Missing sensors never become invented measurements. New SQLite records use an additive v2 migration with a v1 backup, protected legacy/knowledge records, configurable rolling retention and removal audit. Historical replay and equal-count comparisons retain source references.
 
-## Stage 2: measured outcome
+## Verified results
 
-The portable Windows executable launches a native interface. Real ARX evidence becomes validated events, selectable visual objects, precise inspectable measurements and persistent SQLite history. A new application can also run offline with visibly synthetic demonstration data.
+| Check | Recorded result |
+|---|---|
+| Original baseline | 46 tests passed; original executable freshly exercised before changes |
+| Expanded automated suite | **79 passed**, zero failures/errors/skips in the final isolated run |
+| Actual release executable | Native GUI, live updates, interactions, tables, process relationships, errors, replay and shutdown passed |
+| ARX | Real report imported as 38 normalized events |
+| Database migration | All **44** copied Mission 001 event bodies preserved; SQLite integrity `ok` |
+| Real benchmarks | CPU 32×32, 292 checked iterations over 2.003 s; RTX 3050 CUDA 256×256, 4,236 synchronized checked iterations over 0.300 s |
+| Export readback | **1,308** exported events independently matched persisted SQLite bodies |
+| Local AI | Actual packaged GUI used existing **qwen3.8:27b** on a warmed loopback endpoint; explanation and its exact source observation persisted; 43 observer samples continued during the 44.1 s GUI verification |
+| Optional-AI failure | Unavailable endpoint leaves observation and the rest of the application usable |
+| Portable ZIP | All **135** files matched the verified folder by SHA-256; extracted executable launched away from the source directory and closed through its native window |
+| Preservation | Original executable/ZIP hashes unchanged; six selected existing installation/source hashes match the Mission 001 baseline |
 
-The packaged acceptance run imported **38 real ARX events**, ran CPU and GPU matrix tests, recorded an intentional malformed-input failure, sampled three hardware events, and retained **44 observed records**. External verification reopened SQLite, checked integrity, compared the JSON export to every stored event, validated all events, and confirmed process exit code 0 with **zero surviving child processes**.
+The final executable SHA-256 is `109994f3c3057f6cf620d7b0b823617c6ae52c9101279aa7b9cf884c08aa32d6`.
+The 50,841,474-byte ZIP SHA-256 is `4db1f2cec468e4adef3252ff71b9cba0ad5caa9a2ddf49c4d7d33c0a026767d2`.
 
-**46 automated tests passed, with no failures, errors or skips.** Coverage includes schema and units, finite values, normalization, deterministic energy, ARX contract checks, immutable transactions, retention bounds, replay, exports, source permissions, environment discovery, local-model transport boundaries, worker output verification, cancellation, deadlines, failed executables, GUI controls and shutdown. [Functional evidence](EVIDENCE/ATOMVERSE-FUNCTIONAL-TESTS.json), [actual binary evidence](EVIDENCE/ATOMVERSE-GUI-VERIFICATION.json).
+## Measured overhead
 
-## Actual benchmark samples
+The actual packaged application ran a 15-second baseline phase and a 15-second controlled-load phase with one-second sampling and up to 24 process observations. Existing workstation activity continued. Controlled load used three owned, bounded CPU helpers and the existing CPU/GPU benchmark workers. The configured frame cap was 30 fps, temporarily 15 during benchmarks.
 
-| Backend | Workload | Iterations | Measured duration | Result |
-|---|---|---:|---:|---|
-| CPU / Python float matrix | 16 × 16 | 440 | 300.275 ms | PASS; checksum 12160 |
-| RTX 3050 / PyTorch CUDA float32 | 256 × 256 | 3960 | 300.087 ms | PASS; checksum 65536 |
+Combined GUI/observer CPU averaged **2.86%** of total logical-processor capacity in the baseline phase and **3.69%** under added load. Peak combined working set was **175.3 MiB**. Sampling-duration p95 was **103.4 ms / 125.9 ms**; scheduling-delay p95 was **13.1 ms / 11.4 ms**. Paint-time p95 was **20.0 ms**. The bounded display queue dropped no batches. Full-run GUI timer-delay p95 was **26.0 ms**; the maximum **1.51 s** includes synchronous acceptance-driver assertions and export readback. This short run does not establish long-duration or cross-hardware performance.
 
-GPU peak PyTorch allocation was 9.125 MiB. This excludes driver/context and other applications' allocations. CUDA work synchronized every iteration. These small, different workloads are acceptance checks; they are not a CPU/GPU speedup comparison, peak-device benchmark or evidence of regression/improvement. Raw configuration and timings are in [benchmark results](EVIDENCE/ATOMVERSE-BENCHMARK-RESULTS.json).
+Profiling led to two changes: one Windows process-parent snapshot per sample instead of repeated map queries, and cached orbit geometry. All observation, benchmark and interpretation workers stopped cleanly. The isolated verification model server was also stopped; no monitoring service was left running.
 
-The universe painted **53 frames while the GPU worker ran**. During the full interaction/stress verification, 155 paints averaged 21.490 ms with a maximum of 59.815 ms. The 512-particle stress case automatically reduced rendered detail to 216. These are paint timings, not a sustained FPS guarantee. Software painting remains a scale limitation.
+## Integration and AI scope
 
-## Workstation and reuse
+ARX consumes real versioned reports. COG 2.0.0 and DRAGONHYDRA module-registry/1 adapters consume explicitly selected exports; their actual source contracts and fixtures were inspected/tested, but private production histories and authenticated services were not accessed. Other owner repositories were investigated without modification or runtime coupling.
 
-Fresh checks found Ryzen 5 5600G (6 cores / 12 threads), approximately 64 GiB RAM, RTX 3050 with 6 GiB dedicated VRAM, compute capability 8.6, NVIDIA driver 621.24, Windows 11 Insider build 29695, Vulkan 1.4.357 and DirectX 12. Existing PyTorch 2.15.0+cu134 exercised CUDA 13.4; cuDNN 92600 was available. TensorRT 11.4.0.106 imported in a separate environment; no TensorRT inference was tested.
+The existing Qwen model required no download. An initial cold request timed out; a warmed selected-event request passed through the actual packaged GUI. Native Ollama inference was requested on CPU with bounded threads/context/output. The application never starts a model automatically, sends process names or executes model text. Longer summaries or cold models may exceed the 90-second deadline; non-AI functionality remains intact.
 
-Existing Qt/Python/PyInstaller tools were reused. ARX produced a fresh report from an isolated source checkout; its installed application was not modified. COG and DRAGONHYDRA informed boundaries through read-only source/document inspection. Additional public repositories were reviewed for later adapters. The [reuse matrix](RESEARCH/DEPENDENCY-REUSE-MATRIX.md) distinguishes inspected capability from implemented integration.
+## Limitations and next priorities
 
-Six selected pre-existing executable/manifest/document files retained their original SHA-256 hashes. This supports preservation of those files, not a whole-disk proof. No existing installation, credential store or sibling source repository was intentionally modified. [Preservation evidence](EVIDENCE/PRESERVATION-VERIFICATION.json).
+- CPU temperature, reliable per-process GPU utilization/VRAM and verified disk response time are unavailable. GPU context membership is not utilization attribution or proof of AI activity.
+- Process selection, live history, table rows, particle counts, IPC and storage are bounded. Omitted processes are not presumed terminated. Retention can cover less than the configured age when its row limit wins.
+- Historical comparison describes measured windows; workload equivalence and causal explanations are not established. No autonomous repair or full process-dependency inference is implemented.
+- COG/DRAGONHYDRA production-export validation, longer soak testing, broader time-range exploration and lower-latency local inference are next priorities.
+- The Windows prerelease is unsigned and experimental. The owner retains the general project-license decision; included third-party notices and replaceable LGPL libraries accompany the portable package.
 
-## Build and use
-
-Local executable: dist/ATOMVERSE-AI/ATOMVERSE-AI.exe. Keep the complete folder together. Build/source instructions: [SOFTWARE/README.md](SOFTWARE/README.md). Default local history: %LOCALAPPDATA%/ATOMVERSE-AI/. Exact executable hash and source files: [BUILD-MANIFEST](EVIDENCE/BUILD-MANIFEST.json).
-
-The artifact is an unsigned portable development build. It is not a public GitHub binary release. Project licensing remains the owner's decision; dependency notices and license texts are included separately.
-
-## Known limitations and unresolved work
-
-- Rendering is a rotatable 3D projection painted by Qt, not a full game engine or physical simulation. Larger scenes need a more efficient renderer.
-- Qwen3-Coder's historical file locations are unavailable. A different qwen3.8:27b manifest and model blob exist, but no server was running and no real-model inference was performed. The configurable endpoint and protocol are implemented; actual model integration remains unverified.
-- CPU/GPU matrices are the only implemented benchmark categories. cuDNN convolution, TensorRT inference, transfers, allocations, model loading and inference latency remain future work.
-- Hardware/software maps are inspectable record summaries. Source Code Galaxy reads bounded file metadata; it does not yet build a dependency graph. Direct COG/Codex result adapters and broader service/process/event-log observation are deferred.
-- Automated comparable-session regression detection, benchmark comparison UI and long-term knowledge summaries are not implemented. Original measurement records remain available for later analysis.
-- Replay preserves event order and timestamps but compresses playback to one event per 400 ms. It does not reconstruct historical physical motion.
-- History stops at its documented capacity; there is no automatic archival UI. Export and a new data directory are the current retention workflow.
-- GUI verification used this Windows Insider workstation. Other Windows builds, accessibility/high-DPI configurations, installers and digital signing have not been validated. No comprehensive security or performance certification is claimed.
-
-## Next priorities
-
-1. Improve renderer efficiency and evidence-panel usability with measured frame budgets.
-2. Add comparable benchmark sessions, controlled warmup/sampling and additional bounded workloads.
-3. Verify an operator-selected running local model and add evidence-citation checks.
-4. Add versioned COG/Codex adapters, richer source relationships and explicit archival controls.
-
-The first verified information flow is complete: **REAL DATA → EVENT → VISUAL OBJECT → MEASUREMENT → MEMORY**. The broader human vision remains the continuing product objective.
+Evidence: `MISSION-002-DISCOVERY.json`, `MISSION-002-TEST-RESULTS.json`, `MISSION-002-PERFORMANCE.json`, `MISSION-002-GUI-VERIFICATION.json`, `MISSION-002-AI-VERIFICATION.json`, `MISSION-002-PORTABLE-VERIFICATION.json`, and `MISSION-002-FINAL-VERIFICATION.json`. Raw process histories, ARX input and databases remain private. Mission 001 documents and evidence remain available.

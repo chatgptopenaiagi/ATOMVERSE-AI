@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0-alpha.1 — The Living Universe, 2026-11-17
+
+- Added isolated continuous CPU/core, RAM/commit, disk and NVIDIA observation with visible source controls and bounded sampling.
+- Added process identities, verified parent/CPU/memory/executable/context relationships, historical states and termination detection.
+- Added scientific metadata, unavailable reasons, deterministic entity updates, numerical dashboards and class filtering.
+- Migrated SQLite additively with a v1 backup, protected legacy records, explicit rolling retention, integrity checks and historical comparisons.
+- Added explicit COG 2.0.0 and DRAGONHYDRA module-registry/1 export adapters.
+- Added cancellable local AI interpretation with bounded summaries, evidence references and protected source records; verified the existing Qwen model on a warmed loopback endpoint.
+- Preserved all Mission 001 tests, evidence and artifacts. Added real observation, migration, lifecycle, performance and packaged acceptance checks.
+- Cached orbit geometry after profiling and replaced repeated Windows parent-map queries with one snapshot per sample.
+
 ## 0.1.0-alpha.1 — working vertical slice, 2026-11-17
 
 - Added the native Qt computational universe and ten navigation destinations.

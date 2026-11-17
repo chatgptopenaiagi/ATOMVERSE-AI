@@ -29,3 +29,19 @@ Support the actual ARX machine envelope 0.1 and nested GPU schema 1.0. Reject Pr
 ## ADR-006 — local model readiness
 
 Historical Qwen3-Coder model paths are unavailable; a different Ollama qwen3.8:27b manifest/blob is present. No model was started. Provide a configurable loopback chat endpoint and honest errors. Protocol tests use a labeled test server and do not prove real model inference.
+
+## ADR-007 — Mission 002 observation isolation
+
+ADRs 001–006 record Mission 001 decisions. Mission 002 retains Qt, SQLite, existing ARX intake and external PyTorch workers. An owned process collects and commits observations independently of the GUI. Direct NVML avoids repeated nvidia-smi launches and CUDA allocation. One Windows Toolhelp parent snapshot replaces costly per-process map queries. Process identity is checked around that snapshot; GPU linkage rejects identities created after the NVIDIA observation began.
+
+## ADR-008 — scientific metadata and retention
+
+Schema 1.1 adds classifications, derivation inputs, relationships and unavailable reasons. Legacy bodies remain unchanged. SQLite v2 migrates additively after a v1 backup. Explicit rolling retention supersedes ADR-003's no-pruning rule only for new continuous samples. Original records and evidence referenced by interpretations/comparisons remain protected.
+
+## ADR-009 — bounded local interpretation
+
+Existing qwen3.8:27b weights were tested without downloading a model. A cold request exceeded its deadline; a warmed CPU-only endpoint returned an evidence-linked explanation. Requests use a cancellable process, compact aggregate summaries or a selected hardware event, and a 90-second deadline. AI_INTERPRETED records protect their source measurements. The application never automatically starts a model.
+
+## ADR-010 — versioned artifacts
+
+Builds use versioned candidate folders. Verified portable folders live under dist/releases/VERSION; prior executables and ZIPs remain intact. The final directory is executed with an external watchdog and database/export readback, then zipped and checked by SHA-256. Prerelease publication requires passing acceptance.
