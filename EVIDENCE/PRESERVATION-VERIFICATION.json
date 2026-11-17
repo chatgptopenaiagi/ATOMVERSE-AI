@@ -1,0 +1,38 @@
+{
+  "recorded_at_utc": "2026-11-17T13:27:41.9884739Z",
+  "status": "PASS",
+  "method": "SHA-256 before/after of six selected existing executable/manifest/document files; no installation writes performed",
+  "scope": "Selected files only, not a whole-disk integrity proof",
+  "files": [
+    {
+      "component": "ARX.exe",
+      "sha256": "3a5525b4a76b821fb4132430777b48f3648ae4eb5e065455ba06a2b90a825bba",
+      "unchanged": true
+    },
+    {
+      "component": "python.exe",
+      "sha256": "d4e19e9a33268fb0ce575a24ab2d4b85972524f1933df008a6befc14dce19fbd",
+      "unchanged": true
+    },
+    {
+      "component": "python.exe",
+      "sha256": "5988c9b9e055a9036d449c184bf5d78647b43148f94c912914d36a6efba4af1d",
+      "unchanged": true
+    },
+    {
+      "component": "README.md",
+      "sha256": "28bb114af36d0ae7b69ea60eadcd5762c7c0f4fe337bcc6e41ac2dd051a3a78a",
+      "unchanged": true
+    },
+    {
+      "component": "README.md",
+      "sha256": "5800b52e8eed700e6e9d2e2b54c42bbf4f247fbcbca61a00ff9e39cbc8a05282",
+      "unchanged": true
+    },
+    {
+      "component": "pyproject.toml",
+      "sha256": "84602c34b788cf990739b5a58b876e5bfbe2e5b96204d6b849ff1e387854d3ea",
+      "unchanged": true
+    }
+  ]
+}

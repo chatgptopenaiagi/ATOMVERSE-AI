@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ATOMVERSE event 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "source",
+    "category",
+    "message",
+    "timestamp_utc",
+    "component",
+    "status",
+    "data_kind",
+    "metrics",
+    "provenance",
+    "configuration",
+    "calculated",
+    "visual"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "message": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 2048
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+    },
+    "component": {
+      "enum": [
+        "cpu",
+        "gpu",
+        "memory",
+        "storage",
+        "ai",
+        "code",
+        "database",
+        "guardian"
+      ]
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "INFO",
+        "SKIP",
+        "CANCELLED"
+      ]
+    },
+    "data_kind": {
+      "enum": [
+        "observed",
+        "synthetic",
+        "interpretation"
+      ]
+    },
+    "metrics": {
+      "type": "object",
+      "maxProperties": 32,
+      "propertyNames": {
+        "minLength": 1,
+        "maxLength": 64
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "value",
+          "unit"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "value": {
+            "type": "number",
+            "minimum": -273.15,
+            "maximum": 1000000000000000000
+          },
+          "unit": {
+            "enum": [
+              "%",
+              "ms",
+              "s",
+              "bytes",
+              "MiB",
+              "count",
+              "C",
+              "GFLOP/s",
+              "ratio"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "unit": {
+                  "const": "%"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "value": {
+                  "minimum": 0,
+                  "maximum": 100
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "unit": {
+                  "not": {
+                    "const": "C"
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "value": {
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "configuration": {
+      "type": "object"
+    },
+    "calculated": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "metric",
+        "confidence",
+        "scale",
+        "intensity"
+      ],
+      "properties": {
+        "metric": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "scale": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "lower": {
+          "type": "number"
+        },
+        "upper": {
+          "type": "number"
+        }
+      }
+    },
+    "visual": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "visual_energy",
+        "color"
+      ],
+      "properties": {
+        "visual_energy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "color": {
+          "enum": [
+            "#ff637c",
+            "#8292ab",
+            "#ffd17b",
+            "#68e4b0",
+            "#65baff"
+          ]
+        }
+      }
+    }
+  },
+  "$comment": "Runtime also enforces 8192 UTF-8 bytes, finite values throughout, metric-specific units, canonical UTC and deterministic calculation equality. Schema alone cannot prove measured provenance."
+}

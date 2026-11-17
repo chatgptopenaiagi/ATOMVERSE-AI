@@ -1,0 +1,184 @@
+{
+  "started_at_utc": "2026-11-17T13:32:48.502Z",
+  "packaged_executable": true,
+  "checks": {
+    "native_window_visible": true,
+    "demo_isolated_and_polling_off_by_default": true,
+    "actual_arx_ingestion_values_and_sqlite": 38,
+    "mouse_particle_selection_resolves_exact_event": true,
+    "rotate_zoom_pan": true,
+    "pause_resume": true,
+    "measurement_table_filter": true,
+    "replay_without_duplicate_writes": true,
+    "cpu_benchmark_numeric_verification": true,
+    "gpu_cuda_benchmark_numeric_verification": true,
+    "universe_rendered_during_gpu_worker": 53,
+    "malformed_input_visible_failure": true,
+    "export_readback": true,
+    "bounded_rendering": {
+      "particles": 512,
+      "configured_limit": 512,
+      "effective_limit": 216
+    },
+    "database_integrity": true,
+    "real_hardware_sample": 3
+  },
+  "status": "PASS",
+  "elapsed_seconds": 9.327023100002407,
+  "error": null,
+  "retained_events": 44,
+  "benchmark_results": [
+    {
+      "calculated": {
+        "confidence": 1.0,
+        "intensity": 0.060055080000165614,
+        "lower": 0,
+        "metric": "duration_ms",
+        "scale": 1.0,
+        "unit": "ms",
+        "upper": 5000,
+        "value": 300.2754000008281
+      },
+      "category": "benchmark",
+      "component": "cpu",
+      "configuration": {
+        "backend": "stdlib-matrix",
+        "device": "AMD64",
+        "dtype": "python-float",
+        "kind": "cpu",
+        "max_wall_seconds": 30,
+        "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+        "python": "3.14.9",
+        "seconds": 0.3,
+        "size": 16,
+        "synchronized": true,
+        "threads": 1,
+        "warmup_iterations": 1
+      },
+      "data_kind": "observed",
+      "event_id": "a8801ae4-bef7-4998-bce4-f5992f6503c8",
+      "message": "Matrix output numerically verified",
+      "metrics": {
+        "checksum": {
+          "unit": "count",
+          "value": 12160.0
+        },
+        "duration_ms": {
+          "unit": "ms",
+          "value": 300.2754000008281
+        },
+        "iterations": {
+          "unit": "count",
+          "value": 440
+        },
+        "mean_iteration_ms": {
+          "unit": "ms",
+          "value": 0.6824440909109729
+        },
+        "throughput_gflops": {
+          "unit": "GFLOP/s",
+          "value": 0.012003913740486432
+        }
+      },
+      "provenance": {
+        "worker": "atomverse-matrix/1"
+      },
+      "schema_version": "1.0",
+      "source": "benchmark-worker",
+      "status": "PASS",
+      "timestamp_utc": "2026-11-17T13:32:49.867Z",
+      "visual": {
+        "color": "#ffd17b",
+        "visual_energy": 0.06005508
+      }
+    },
+    {
+      "calculated": {
+        "confidence": 1.0,
+        "intensity": 0.06001749999995809,
+        "lower": 0,
+        "metric": "duration_ms",
+        "scale": 1.0,
+        "unit": "ms",
+        "upper": 5000,
+        "value": 300.08749999979045
+      },
+      "category": "benchmark",
+      "component": "gpu",
+      "configuration": {
+        "backend": "pytorch",
+        "cuda": "13.4",
+        "cudnn": 92600,
+        "device": "NVIDIA GeForce RTX 3050",
+        "dtype": "float32",
+        "kind": "gpu",
+        "max_wall_seconds": 30,
+        "python": "3.15.2",
+        "seconds": 0.3,
+        "size": 256,
+        "synchronized": true,
+        "tensor_bytes": 786432,
+        "tf32": false,
+        "torch": "2.15.0+cu134",
+        "vram_reserve_mib": 1536,
+        "warmup_iterations": 1
+      },
+      "data_kind": "observed",
+      "event_id": "6b752a59-d840-46ca-84f0-4ebf2ac33607",
+      "message": "Matrix output numerically verified",
+      "metrics": {
+        "allocated_peak_mib": {
+          "unit": "MiB",
+          "value": 9.125
+        },
+        "checksum": {
+          "unit": "count",
+          "value": 65536.0
+        },
+        "duration_ms": {
+          "unit": "ms",
+          "value": 300.08749999979045
+        },
+        "iterations": {
+          "unit": "count",
+          "value": 3960
+        },
+        "mean_iteration_ms": {
+          "unit": "ms",
+          "value": 0.0757796717171188
+        },
+        "throughput_gflops": {
+          "unit": "GFLOP/s",
+          "value": 442.7893555049537
+        }
+      },
+      "provenance": {
+        "worker": "atomverse-matrix/1"
+      },
+      "schema_version": "1.0",
+      "source": "benchmark-worker",
+      "status": "PASS",
+      "timestamp_utc": "2026-11-17T13:32:53.894Z",
+      "visual": {
+        "color": "#ffd17b",
+        "visual_energy": 0.0600175
+      }
+    }
+  ],
+  "rendering": {
+    "frames": 155,
+    "paint_ms_mean": 21.490018064439703,
+    "paint_ms_max": 59.81519999841112,
+    "particle_limit": 512
+  },
+  "external_verification": {
+    "exit_code": 0,
+    "wall_seconds": 13.568284800003312,
+    "database_integrity": "ok",
+    "export_matches_database": true,
+    "validated_events": 44,
+    "observed_child_processes": 5,
+    "surviving_child_processes": 0,
+    "stderr_bytes": 0
+  }
+}

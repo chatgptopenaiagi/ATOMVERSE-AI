@@ -1,0 +1,135 @@
+{
+  "recorded_at_utc": "2026-11-17T13:22:39.119954+00:00",
+  "method": "fresh ARX scan plus fixed bounded runtime probes; personal paths and device identifiers omitted",
+  "arx_scan_at_utc": "2026-11-17T13:00:19.237346+00:00",
+  "cpu": {
+    "Name": "AMD Ryzen 5 5600G with Radeon Graphics         ",
+    "NumberOfCores": 6,
+    "NumberOfLogicalProcessors": 12,
+    "Architecture": 9
+  },
+  "memory": {
+    "total_bytes": 68047552512,
+    "available_bytes": 46582403072
+  },
+  "operating_system": {
+    "edition": "Microsoft Windows 11 Pro Insider Preview",
+    "version": "10.0.29695",
+    "build": "29695",
+    "architecture": "AMD64"
+  },
+  "gpus": [
+    {
+      "name": "NVIDIA GeForce RTX 3050",
+      "driver_version": "621.24",
+      "dedicated_vram_bytes": 6442450944,
+      "compute_capability": "8.6"
+    }
+  ],
+  "storage": [
+    {
+      "DriveLetter": "G",
+      "Size": 320055799808,
+      "SizeRemaining": 12853821440,
+      "DriveType": "Fixed"
+    },
+    {
+      "DriveLetter": "D",
+      "Size": 255037796352,
+      "SizeRemaining": 126794252288,
+      "DriveType": "Fixed"
+    },
+    {
+      "DriveLetter": "C",
+      "Size": 999170240512,
+      "SizeRemaining": 153016209408,
+      "DriveType": "Fixed"
+    },
+    {
+      "DriveLetter": "E",
+      "Size": 999396192256,
+      "SizeRemaining": 379249233920,
+      "DriveType": "Fixed"
+    }
+  ],
+  "python_providers": [
+    {
+      "version": "3.15.2",
+      "architecture_bits": "64-bit",
+      "healthy": true,
+      "health_status": "healthy"
+    },
+    {
+      "version": null,
+      "architecture_bits": null,
+      "healthy": false,
+      "health_status": "unhealthy"
+    },
+    {
+      "version": null,
+      "architecture_bits": null,
+      "healthy": false,
+      "health_status": "unhealthy"
+    }
+  ],
+  "pytorch": {
+    "python": "3.15.2",
+    "torch": "2.15.0+cu134",
+    "cuda": "13.4",
+    "cuda_available": true,
+    "cudnn": 92600,
+    "cpu_instruction_backend": "AVX2",
+    "device": "NVIDIA GeForce RTX 3050"
+  },
+  "tensorrt": {
+    "version": "11.4.0.106",
+    "import_verified": true,
+    "inference_verified": false
+  },
+  "cuda_toolkit": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Sun_Sep_01_02:23:07_Pacific_Standard_Time_2026\nCuda compilation tools, release 13.4, V13.4.92\nBuild cuda_13.4.r13.4/compiler.38855100_0",
+  "vulkan_instance_version": "1.4.357",
+  "directx": [
+    "DirectX Version: DirectX 12",
+    "Feature Levels: 12_2,12_1,12_0,11_1,11_0,10_1,10_0,9_3,9_2,9_1,1_0_CORE",
+    "Driver Model: WDDM 3.2",
+    "Feature Levels: Unknown",
+    "Driver Model: Unknown"
+  ],
+  "databases": {
+    "sqlite": "3.53.4",
+    "sql_server": "existing running service observed; not used or modified",
+    "postgresql": "existing running service observed; not used or modified"
+  },
+  "qwen": {
+    "historical_exact_model_locations_present": [
+      false,
+      false
+    ],
+    "exact_model_verified": false,
+    "alternate": {
+      "name": "qwen3.8:27b",
+      "manifest_present": true,
+      "model_layers": [
+        {
+          "bytes": 16810714464,
+          "exists": true
+        }
+      ],
+      "inference_performed": false
+    },
+    "serving_process_probe": "No matching running process observed",
+    "server_or_model_started": false
+  },
+  "scope_limitations": [
+    "Not an exhaustive disk search",
+    "CPU AVX2 backend reported by PyTorch; full CPUID feature inventory not performed",
+    "Model blobs inspected by presence/size, not full hash or inference",
+    "DirectX/Vulkan availability is not a comparative engine benchmark"
+  ],
+  "additional_tool_version_probes": {
+    "dotnet_sdk": "11.0.100",
+    "node": "v27.0.0-alpha.0.1.1",
+    "cargo": "1.99.1",
+    "powershell": "7.7.0"
+  }
+}

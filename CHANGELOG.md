@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-alpha.1 — working vertical slice, 2026-11-17
+
+- Added the native Qt computational universe and ten navigation destinations.
+- Implemented validated events, deterministic visual scores, explicit ARX intake, hardware sampling, selected text/source metadata, immutable SQLite memory, replay and atomic exports.
+- Added bounded CPU and optional external PyTorch/CUDA matrix workers, numerical checks, cancellation and timeout.
+- Added a configurable loopback model API with interpretation labels; actual Qwen inference remains unverified.
+- Verified 46 tests and the actual Windows executable, including real ARX values, CPU/GPU measurements, rendering during benchmarks, evidence inspection and clean shutdown.
+- Recorded discovery, architecture decisions, screenshots, benchmark outputs, build hashes and limitations. No public binary release is claimed.
+
 ## 0.1.0-alpha.1 — genesis documentation
 
 - Preserved the human creator's computational-universe concept.

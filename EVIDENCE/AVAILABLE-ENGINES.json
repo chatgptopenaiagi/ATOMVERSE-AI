@@ -1,0 +1,38 @@
+{
+  "recorded_at_utc": "2026-11-17T13:22:39.119954+00:00",
+  "selected": {
+    "ui": "PySide6/QPainter projection",
+    "storage": "SQLite",
+    "cpu": "standard-library float matrix",
+    "gpu": "existing external PyTorch",
+    "telemetry": "psutil + nvidia-smi"
+  },
+  "installed_packages": {
+    "PySide6": "6.11.0 ",
+    "psutil": "7.2.2",
+    "numpy": "2.4.6",
+    "pytest": "9.1.1"
+  },
+  "godot_version_probe": {
+    "exit_code": 0,
+    "output": "4.7.2.stable.mono.official.ed1daf0bf",
+    "error": ""
+  },
+  "pytorch": {
+    "python": "3.15.2",
+    "torch": "2.15.0+cu134",
+    "cuda": "13.4",
+    "cuda_available": true,
+    "cudnn": 92600,
+    "cpu_instruction_backend": "AVX2",
+    "device": "NVIDIA GeForce RTX 3050"
+  },
+  "tensorrt": {
+    "version": "11.4.0.106",
+    "import_verified": true,
+    "inference_verified": false
+  },
+  "reuse_matrix": "RESEARCH/DEPENDENCY-REUSE-MATRIX.md",
+  "alternatives": "RESEARCH/ENGINE-EVALUATION.md",
+  "new_global_installations": []
+}

@@ -1,0 +1,287 @@
+{
+  "recorded_at_utc": "2026-11-17T13:32:57.948368+00:00",
+  "tests": 46,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "duration_seconds": 4.266,
+  "cases": [
+    {
+      "name": "test_energy_is_reproducible_and_dimensionless",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_clamping_and_missing_metrics",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_reject_invalid_percentage[nan]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_reject_invalid_percentage[inf]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_reject_invalid_percentage[-1]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_reject_invalid_percentage[101]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_reject_invalid_percentage[True]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_reject_invalid_percentage[50]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_reject_invalid_percentage[10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_schema_rejections[schema_version-2.0]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_schema_rejections[status-SUCCESS]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_schema_rejections[data_kind-real-ish]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_schema_rejections[component-network]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_schema_rejections[timestamp_utc-2026-01-01T00:00:00]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_schema_rejections[message-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_wrong_units_and_forged_visual",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_database_immutable_and_reopen",
+      "class": "TESTS.test_core",
+      "seconds": 0.036,
+      "passed": true
+    },
+    {
+      "name": "test_transaction_rolls_back_on_limit",
+      "class": "TESTS.test_core",
+      "seconds": 0.016,
+      "passed": true
+    },
+    {
+      "name": "test_replay_order_does_not_mutate",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_json_roundtrip_and_csv_formula_protection",
+      "class": "TESTS.test_core",
+      "seconds": 0.035,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[malformed]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[nonfinite]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[encoding]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[oversized]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_arx_measurements_provenance_and_idempotency",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_arx_rejects_new_contract[0.2]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_arx_rejects_new_contract[1.0]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_arx_rejects_new_contract[None]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_arx_report_preserved",
+      "class": "TESTS.test_core",
+      "seconds": 0.019,
+      "passed": true
+    },
+    {
+      "name": "test_demo_never_claims_observation",
+      "class": "TESTS.test_core",
+      "seconds": 0.011,
+      "passed": true
+    },
+    {
+      "name": "test_explicit_source_metadata_ignores_private_tree",
+      "class": "TESTS.test_core",
+      "seconds": 0.006,
+      "passed": true
+    },
+    {
+      "name": "test_python_discovery_and_invalid_target",
+      "class": "TESTS.test_core",
+      "seconds": 0.122,
+      "passed": true
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[https://example.com/v1]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[http://127.0.0.1.evil/v1]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[http://user:pass@localhost/v1]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[http://localhost/v1?secret=yes]",
+      "class": "TESTS.test_core",
+      "seconds": 0.001,
+      "passed": true
+    },
+    {
+      "name": "test_cpu_worker_actual_output_and_invalid_workload",
+      "class": "TESTS.test_core",
+      "seconds": 0.514,
+      "passed": true
+    },
+    {
+      "name": "test_published_json_schema_matches_generated_events",
+      "class": "TESTS.test_core",
+      "seconds": 0.213,
+      "passed": true
+    },
+    {
+      "name": "test_loopback_model_contract_and_interpretation_label",
+      "class": "TESTS.test_core",
+      "seconds": 0.542,
+      "passed": true
+    },
+    {
+      "name": "test_gui_sources_and_mode_isolation",
+      "class": "TESTS.test_gui",
+      "seconds": 0.392,
+      "passed": true
+    },
+    {
+      "name": "test_gui_camera_selection_pause_and_settings",
+      "class": "TESTS.test_gui",
+      "seconds": 0.236,
+      "passed": true
+    },
+    {
+      "name": "test_gui_benchmark_cancel_persists_accurate_state",
+      "class": "TESTS.test_gui",
+      "seconds": 0.507,
+      "passed": true
+    },
+    {
+      "name": "test_gui_replay_filter_and_shutdown",
+      "class": "TESTS.test_gui",
+      "seconds": 0.181,
+      "passed": true
+    },
+    {
+      "name": "test_gui_hard_deadline_failure",
+      "class": "TESTS.test_gui",
+      "seconds": 0.35,
+      "passed": true
+    },
+    {
+      "name": "test_gui_shutdown_terminates_active_worker",
+      "class": "TESTS.test_gui",
+      "seconds": 0.29,
+      "passed": true
+    },
+    {
+      "name": "test_failed_executable_is_recorded_as_failure",
+      "class": "TESTS.test_gui",
+      "seconds": 0.38,
+      "passed": true
+    }
+  ],
+  "status": "PASS"
+}

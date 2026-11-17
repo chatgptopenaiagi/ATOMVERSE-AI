@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0-alpha.1",
+  "artifact": "dist/ATOMVERSE-AI-0.1.0-alpha.1-win-x64.zip",
+  "bytes": 52500261,
+  "sha256": "b31a924defde98a843e70297dadeab6d2d30f497046bd06f0e679dd396178620",
+  "kind": "unsigned local portable development build",
+  "github_release_published": false
+}

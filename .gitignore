@@ -17,6 +17,7 @@ dist/
 *.key
 *.gguf
 *.safetensors
+*.egg-info/
 node_modules/
 .vs/
 .idea/

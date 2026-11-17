@@ -2,13 +2,19 @@
 
 ## Gate 1 — public genesis
 
+**Completed:** public documentation commit and remote readback recorded in EVIDENCE/STAGE-1-VERIFICATION.json.
+
 Preserve the original idea and mission; publish documentation only; verify account, public visibility, commit, README, vision and roadmap remotely; record sanitized evidence. No application implementation before this gate.
 
 ## Gate 2 — evidence-based discovery
 
+**Completed for the alpha:** fresh ARX/runtime probes, official engine review and a dependency/reuse matrix. Exact historical Qwen model paths are unavailable; discovery is not an exhaustive whole-disk inventory.
+
 Measure actual workstation capabilities. Inspect ARX, COG, DRAGONHYDRA and Qwen without modifying them. Review owner repositories and official engine documentation. Produce a dependency/reuse matrix and architecture decision with alternatives, packaging, resource costs and offline behavior.
 
 ## Gate 3 — first working vertical slice
+
+**Verified:** actual Windows executable, 46 tests, real ARX intake, deterministic visualization, SQLite persistence, CPU/CUDA benchmarks, errors, replay, export and shutdown. See ATOMVERSE-FINAL-REPORT.md for precise scope.
 
 Implement validated events, deterministic visual scores, SQLite persistence, explicit ARX intake, interactive universe, precise tables, bounded CPU and optional GPU benchmarks, replay, atomic JSON exports, and clear errors. Provide visibly separated synthetic demonstration data. Package a Windows executable and test the actual binary.
 

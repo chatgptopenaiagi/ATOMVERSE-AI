@@ -1,3 +1,3 @@
 # Performance research
 
-Measure rather than assume CPU/GPU speed. Bound particle count and update frequency. Keep telemetry and benchmark work outside GUI rendering. Record frame latency, workload size, sample count and environment. Preserve Windows/GPU headroom; no all-VRAM allocations. Compare benchmark sessions only under matched conditions. Discovery and experiments must not install duplicate functioning tools.
+Actual binary verification measured CPU/GPU matrices, painting time and rendering while a GPU worker was active. A 512-particle stress case reduced rendered detail automatically. The application enforces one benchmark, conservative VRAM admission, bounded source work and frame caps. See [raw GUI timings](../EVIDENCE/ATOMVERSE-GUI-VERIFICATION.json) and [benchmark configurations](../EVIDENCE/ATOMVERSE-BENCHMARK-RESULTS.json). Short acceptance runs do not establish peak throughput, sustained FPS or regressions. Existing functioning tools were reused.

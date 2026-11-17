@@ -1,7 +1,7 @@
 # ⚛️♾️ ATOMVERSE AI
 ## THE LIVING UNIVERSE OF COMPUTATIONAL INTELLIGENCE
 
-**0.1.0-alpha.1 — experimental genesis.** This initial commit preserves the human concept and engineering mission. It does not contain a working application.
+**0.1.0-alpha.1 — working experimental Windows alpha.** The public documentation genesis was completed and remotely verified before development. A native application now demonstrates the full measured-data flow.
 
 ATOMVERSE AI is a living computational universe that transforms real hardware telemetry, AI activity, source code, benchmarks and software events into interactive visual structures, measurable simulations and persistent knowledge.
 
@@ -38,6 +38,31 @@ Launch on Windows; ingest a real ARX report; validate and normalize events; crea
 
 Target: Windows 11 x64, PowerShell 7. Hardware and installed software must be freshly discovered. Historical hardware reports are not proof of present capabilities.
 
+### Working now
+
+- Interactive projected universe: rotate, pan, zoom, select, pause and adjust rendering quality.
+- Explicit ARX 0.1 report import with schema checks, stable event IDs, units, hashes and field provenance.
+- Requested CPU/RAM/GPU observations; continuous telemetry is opt-in.
+- SQLite history, chronological replay, sortable/searchable measurements, JSON and CSV export.
+- Bounded CPU float-matrix and optional CUDA/PyTorch matrix benchmarks with numerical verification, cancellation and timeout.
+- Clearly isolated demo; selected text and repository metadata intake; optional loopback model API.
+
+![Actual application in observed-data mode](EVIDENCE/real-universe.png)
+
+### Launch
+
+On the mission workstation, open **dist/ATOMVERSE-AI/ATOMVERSE-AI.exe**. Keep its entire folder together. Alternatively run scripts/launch.ps1. A new history starts in **DEMO: SYNTHETIC DATA**; use Import ARX / JSON or Sample hardware to switch to observations.
+
+Source/build instructions and controls: [SOFTWARE/README.md](SOFTWARE/README.md). GPU tests require a separately installed, explicitly selected PyTorch Python. No model, CUDA runtime or SQL Server is required for the standalone CPU/demo application.
+
+### Verification and scope
+
+**46 automated tests pass.** The actual packaged executable imported 38 events from a fresh ARX report, ran CPU and RTX 3050 CUDA benchmarks, persisted 44 observed records including hardware samples and an intentional error test, replayed events, exported/read back JSON, and exited with no surviving child processes. See [functional tests](EVIDENCE/ATOMVERSE-FUNCTIONAL-TESTS.json), [GUI verification](EVIDENCE/ATOMVERSE-GUI-VERIFICATION.json), [benchmark results](EVIDENCE/ATOMVERSE-BENCHMARK-RESULTS.json), and [build hash](EVIDENCE/BUILD-MANIFEST.json).
+
+This is a software-painted 3D projection and an experimental engineering tool. Rich physics, the broader benchmark suite, automated regression analysis, full dependency graphs and direct COG/Codex adapters remain future work. The historical Qwen3-Coder model is unavailable at its reported paths; no real local-model inference is claimed. The unsigned build is local; no GitHub binary release has been published.
+
+Read the [final mission report](ATOMVERSE-FINAL-REPORT.md), [implemented architecture](ATOMVERSE-ARCHITECTURE.md), [event schema](ATOMVERSE-EVENT-SCHEMA.json), [visualization specification](ATOMVERSE-VISUALIZATION-SPEC.md), and [database specification](ATOMVERSE-DATABASE-SCHEMA.md).
+
 ### Data and operator control
 
 Only explicit data sources may be ingested. No private-session interception, keystroke capture, browser scraping, credentials, or unrelated personal content. Demo mode must display **DEMO: SYNTHETIC DATA**. Observations, calculations, AI interpretations, and simulated rendering properties remain distinct.
@@ -46,7 +71,7 @@ Public commits contain reviewed source and sanitized evidence. Raw local reports
 
 ### Development status
 
-Stage 1: conceptual documentation. Stage 2: pending remote verification and discovery. See [CHANGELOG](CHANGELOG.md) and evidence records for verified progress.
+Stage 1: complete and remotely verified. Stage 2: the first packaged vertical slice is verified; expansion remains on the roadmap. See [CHANGELOG](CHANGELOG.md) and [evidence index](EVIDENCE/README.md).
 
 Operating principle: **INGEST → CLASSIFY → MEASURE → TRANSFORM → VISUALIZE → REMEMBER → LEARN**  
 Engineering principle: **DISCOVER → DESIGN → BUILD → TEST → VERIFY → IMPROVE**

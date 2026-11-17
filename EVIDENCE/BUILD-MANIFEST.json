@@ -1,0 +1,52 @@
+{
+  "version": "0.1.0-alpha.1",
+  "recorded_at_utc": "2026-11-17T13:32:57.954171+00:00",
+  "executable": "dist/ATOMVERSE-AI/ATOMVERSE-AI.exe",
+  "sha256": "9c44987308677d9c0478f7cead382bee848eb97fa64505cf669dce4c18a3a7d4",
+  "bytes": 2696273,
+  "packaging": "PyInstaller 6.22.3, windowed portable directory, Windows x64",
+  "artifact_type": "unsigned local development build",
+  "public_binary_release": false,
+  "source_files": [
+    {
+      "path": "SOFTWARE/atomverse/__init__.py",
+      "sha256": "97432f9233a3459652bcd4daf9f4d3e86203650f65c9ea986964f3b01eb268c7"
+    },
+    {
+      "path": "SOFTWARE/atomverse/adapters.py",
+      "sha256": "7f9df4e91a7410dc72393e67ab9b336ceefbe0019a2b76055fa332b841edcc24"
+    },
+    {
+      "path": "SOFTWARE/atomverse/app.py",
+      "sha256": "418f92760ebc7c4668884f2dde2c0f6abd03bb982f5a2b143562a8ff563af06c"
+    },
+    {
+      "path": "SOFTWARE/atomverse/benchmark.py",
+      "sha256": "6193725e22f8a053647dbc29c2ace337d940eb9a76ac86ee3ec2bb4d6dbf95e8"
+    },
+    {
+      "path": "SOFTWARE/atomverse/core.py",
+      "sha256": "9bda53d87c9fd1c51d774780f37113ea049f33614e5cf631ff02e43f864eb1f5"
+    },
+    {
+      "path": "SOFTWARE/atomverse/scene.py",
+      "sha256": "ffd2ee1b7e967666b456b17025fc5519b05bb50bdb56448e3ddb6558e03d2dbc"
+    },
+    {
+      "path": "SOFTWARE/atomverse/sources.py",
+      "sha256": "0961a18cb4e02f8fca19786e96f01c1340fd3caef9895e6d0ef02d405c79ae9d"
+    },
+    {
+      "path": "SOFTWARE/atomverse/verification.py",
+      "sha256": "4afb0c5818ac4fb182e30119a8aadc67f1398ec7daeefb6d7594fa617ee1399e"
+    },
+    {
+      "path": "SOFTWARE/atomverse/worker.py",
+      "sha256": "0fc3141fe5a9c49f3cc798e1bcfef6ca07626dbaf9ce84bec17f52d57dbf819a"
+    },
+    {
+      "path": "SOFTWARE/main.py",
+      "sha256": "7844c4f1f3807bf944699b9c1ebfe93f4ad0351127a603dfe6ff1c5511c211f0"
+    }
+  ]
+}
