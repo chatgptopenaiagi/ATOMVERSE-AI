@@ -1,6 +1,6 @@
 # ATOMVERSE AI — Mission 002 final engineering report
 
-Version: **0.2.0-alpha.1**. Date: **2026-11-17**. Local acceptance: **PASS**. Public-source and prerelease readback are recorded in `EVIDENCE/MISSION-002-FINAL-VERIFICATION.json` after publication.
+Version: **0.2.0-alpha.1**. Date: **2026-11-17**. Mission acceptance: **SUCCESS**. The public source and [v0.2.0-alpha.1 prerelease](https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/tag/v0.2.0-alpha.1) were verified remotely. The downloaded release ZIP matches the verified local archive. Source/tag commit: `c717b41e2af3dda63c1089d30e7d4522c1eda687`.
 
 Mission 002 extends the verified Mission 001 application and preserves the original human vision. Real CPU/core, RAM/commit, disk and available NVIDIA observations now update an interactive universe continuously after visible opt-in. Process entities use PID plus creation time, recorded resource relationships and verified parent identities. Historical and terminated observations remain distinguishable from current samples.
 
@@ -44,7 +44,7 @@ The existing Qwen model required no download. An initial cold request timed out;
 - CPU temperature, reliable per-process GPU utilization/VRAM and verified disk response time are unavailable. GPU context membership is not utilization attribution or proof of AI activity.
 - Process selection, live history, table rows, particle counts, IPC and storage are bounded. Omitted processes are not presumed terminated. Retention can cover less than the configured age when its row limit wins.
 - Historical comparison describes measured windows; workload equivalence and causal explanations are not established. No autonomous repair or full process-dependency inference is implemented.
-- COG/DRAGONHYDRA production-export validation, longer soak testing, broader time-range exploration and lower-latency local inference are next priorities.
+- AI currently interprets selected/latest aggregate hardware evidence. Automatic anomaly detection, session-wide process narratives, COG/DRAGONHYDRA production-export validation, longer soak testing, broader time-range exploration and lower-latency local inference are next priorities.
 - The Windows prerelease is unsigned and experimental. The owner retains the general project-license decision; included third-party notices and replaceable LGPL libraries accompany the portable package.
 
 Evidence: `MISSION-002-DISCOVERY.json`, `MISSION-002-TEST-RESULTS.json`, `MISSION-002-PERFORMANCE.json`, `MISSION-002-GUI-VERIFICATION.json`, `MISSION-002-AI-VERIFICATION.json`, `MISSION-002-PORTABLE-VERIFICATION.json`, and `MISSION-002-FINAL-VERIFICATION.json`. Raw process histories, ARX input and databases remain private. Mission 001 documents and evidence remain available.

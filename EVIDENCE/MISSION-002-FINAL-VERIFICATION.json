@@ -1,9 +1,36 @@
 {
   "mission": "002",
   "version": "0.2.0-alpha.1",
-  "status": "LOCAL_ACCEPTANCE_PASS",
+  "status": "SUCCESS",
   "publication": {
-    "status": "PENDING_REMOTE_READBACK"
+    "status": "VERIFIED",
+    "verified_at_utc": "2026-11-17T15:06:11.089074+00:00",
+    "repository_visibility": "PUBLIC",
+    "default_branch": "main",
+    "source_commit": "c717b41e2af3dda63c1089d30e7d4522c1eda687",
+    "tag_commit_verified": true,
+    "unauthenticated_readme_http_status": 200,
+    "release_url": "https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/tag/v0.2.0-alpha.1",
+    "prerelease": true,
+    "draft": false,
+    "downloaded_zip_sha256": "4db1f2cec468e4adef3252ff71b9cba0ad5caa9a2ddf49c4d7d33c0a026767d2",
+    "assets": [
+      {
+        "name": "ATOMVERSE-AI-0.2.0-alpha.1-SHA256SUMS.txt",
+        "bytes": 190,
+        "state": "uploaded"
+      },
+      {
+        "name": "ATOMVERSE-AI-0.2.0-alpha.1-win-x64.zip",
+        "bytes": 50841474,
+        "state": "uploaded"
+      },
+      {
+        "name": "BUILD-MANIFEST.json",
+        "bytes": 17396,
+        "state": "uploaded"
+      }
+    ]
   },
   "acceptance": {
     "mission001_preserved": true,
@@ -19,7 +46,7 @@
     "windows_executable_launches": true,
     "portable_zip_integrity": true,
     "documentation_and_evidence": true,
-    "public_source_verified": false
+    "public_source_verified": true
   },
   "automated_tests": 79,
   "packaged_gui": {
@@ -86,7 +113,8 @@
     "COG/DRAGONHYDRA real private exports were not tested; source contracts and fixtures were tested.",
     "Cold Qwen startup exceeded the inference deadline; warmed selected-event inference passed.",
     "Short baseline/load performance run, not a long-duration soak or cross-hardware certification.",
-    "Unsigned experimental Windows prerelease; project license decision remains with owner."
+    "Unsigned experimental Windows prerelease; project license decision remains with owner.",
+    "AI interprets selected/latest aggregate hardware evidence; automatic anomaly detection and session-wide process narratives remain future work."
   ],
   "portable_extraction": {
     "status": "PASS",
