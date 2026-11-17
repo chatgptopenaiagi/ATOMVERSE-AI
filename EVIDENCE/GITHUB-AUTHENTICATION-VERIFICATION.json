@@ -1,0 +1,9 @@
+{
+  "recorded_at_utc": "2026-11-17T12:54:40.1663578Z",
+  "account": "chatgptopenaiagi",
+  "authentication": "verified via existing GitHub CLI keyring",
+  "credentials_modified": false,
+  "tokens_recorded": false,
+  "git_version": "git version 2.56.0.windows.3",
+  "github_cli_version": "gh version 2.104.0 (2026-11-12)"
+}
