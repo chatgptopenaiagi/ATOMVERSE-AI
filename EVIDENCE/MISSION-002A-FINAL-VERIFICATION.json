@@ -1,9 +1,77 @@
 {
   "mission": "002A",
   "version": "0.2.0-alpha.2",
-  "status": "LOCAL_ACCEPTANCE_PASS",
+  "status": "SUCCESS",
   "publication": {
-    "status": "PENDING"
+    "status": "VERIFIED",
+    "verified_at_utc": "2026-11-17T17:54:52.011642+00:00",
+    "repository": "chatgptopenaiagi/ATOMVERSE-AI",
+    "repository_visibility": "PUBLIC",
+    "release_url": "https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/tag/v0.2.0-alpha.2",
+    "prerelease": true,
+    "draft": false,
+    "source_commit": "ee007711b962e6555620a4bc2e16538c52fb216e",
+    "tag_commit_verified": true,
+    "assets": [
+      {
+        "name": "ATOMVERSE-AI-0.2.0-alpha.2-android-arm64.apk",
+        "bytes": 22533756,
+        "sha256": "5b3f29266d2f4134c6037dbf86a7f559b401ec87af8f86ae625e0cd838075b12",
+        "github_digest_matches": true,
+        "downloaded_bytes_match": true,
+        "url": "https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/download/v0.2.0-alpha.2/ATOMVERSE-AI-0.2.0-alpha.2-android-arm64.apk"
+      },
+      {
+        "name": "ATOMVERSE-AI-0.2.0-alpha.2-BUILD-MANIFEST.json",
+        "bytes": 2270,
+        "sha256": "4d64c5dcf32a37553c888796119ae75e17669dda8c95cf2a21a96f487b757aa5",
+        "github_digest_matches": true,
+        "downloaded_bytes_match": true,
+        "url": "https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/download/v0.2.0-alpha.2/ATOMVERSE-AI-0.2.0-alpha.2-BUILD-MANIFEST.json"
+      },
+      {
+        "name": "ATOMVERSE-AI-0.2.0-alpha.2-SHA256SUMS.txt",
+        "bytes": 327,
+        "sha256": "7598ece541269ddcdb694b820362729c0ab6a3671fb6a2f7d44c0a372f728aef",
+        "github_digest_matches": true,
+        "downloaded_bytes_match": true,
+        "url": "https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/download/v0.2.0-alpha.2/ATOMVERSE-AI-0.2.0-alpha.2-SHA256SUMS.txt"
+      },
+      {
+        "name": "ATOMVERSE-AI-0.2.0-alpha.2-windows-x64.exe",
+        "bytes": 50786764,
+        "sha256": "abed85bb309f3486c9e424d6ac603a5cedec14c0c53b408495b60afe2bce97c3",
+        "github_digest_matches": true,
+        "downloaded_bytes_match": true,
+        "url": "https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/download/v0.2.0-alpha.2/ATOMVERSE-AI-0.2.0-alpha.2-windows-x64.exe"
+      },
+      {
+        "name": "atomverse_ai-0.2.0a2-py3-none-any.whl",
+        "bytes": 106578,
+        "sha256": "2a8b1411def9fa57d021215520f62df1aa6f43ce7d6820f2e098471bb898586c",
+        "github_digest_matches": true,
+        "downloaded_bytes_match": true,
+        "url": "https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/download/v0.2.0-alpha.2/atomverse_ai-0.2.0a2-py3-none-any.whl"
+      }
+    ],
+    "original_release_assets_preserved": true,
+    "original_asset_readback": [
+      {
+        "name": "ATOMVERSE-AI-0.2.0-alpha.1-SHA256SUMS.txt",
+        "bytes": 190,
+        "digest": "sha256:4411eb8a993047b17e5979c2c62487ebd7c2eb3512e661065f24f1a38fa2fbbc"
+      },
+      {
+        "name": "ATOMVERSE-AI-0.2.0-alpha.1-win-x64.zip",
+        "bytes": 50841474,
+        "digest": "sha256:4db1f2cec468e4adef3252ff71b9cba0ad5caa9a2ddf49c4d7d33c0a026767d2"
+      },
+      {
+        "name": "BUILD-MANIFEST.json",
+        "bytes": 17396,
+        "digest": "sha256:2ef1689fa2444bfc83d44b6917393589e4b261ea330333c94dc3d7df377dfbcd"
+      }
+    ]
   },
   "packages": [
     {

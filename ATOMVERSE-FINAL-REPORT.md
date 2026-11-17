@@ -1,6 +1,6 @@
 # Mission 002A — Multiplatform Expansion
 
-**Version: 0.2.0-alpha.2. Local package acceptance: PASS.** Publication readback is recorded in [final verification](EVIDENCE/MISSION-002A-FINAL-VERIFICATION.json). This is an experimental prerelease, not a finished intelligence platform.
+**Version: 0.2.0-alpha.2. Mission status: SUCCESS.** All five public release assets were downloaded and matched the locally verified SHA-256 digests. [Open the prerelease](https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/tag/v0.2.0-alpha.2). Publication readback is recorded in [final verification](EVIDENCE/MISSION-002A-FINAL-VERIFICATION.json). This is an experimental prerelease, not a finished intelligence platform.
 
 Android adds application functionality, so this mission uses the explicitly authorized version increment. The original v0.2.0-alpha.1 ZIP, executable, checksum asset, tag and evidence remain intact. Its portable ZIP SHA-256 is `4db1f2cec468e4adef3252ff71b9cba0ad5caa9a2ddf49c4d7d33c0a026767d2`. Mission 002 documents are archived in RELEASES/0.2.0-alpha.1; the original human vision is unchanged.
 

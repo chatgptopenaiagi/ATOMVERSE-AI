@@ -43,5 +43,6 @@
     "mobile.py": "cce28f80df475946ee5d60dd8da3e8c6aa9d370d66f09c180afddcd6f59026a3"
   },
   "original_zip_sha256": "4db1f2cec468e4adef3252ff71b9cba0ad5caa9a2ddf49c4d7d33c0a026767d2",
-  "version_decision": "New Android functionality and installed desktop entry point require the incremented prerelease. Original 0.2.0-alpha.1 assets are immutable."
+  "version_decision": "New Android functionality and installed desktop entry point require the incremented prerelease. Original 0.2.0-alpha.1 assets are immutable.",
+  "source_commit": "ee007711b962e6555620a4bc2e16538c52fb216e"
 }
