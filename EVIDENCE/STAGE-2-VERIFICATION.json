@@ -1,0 +1,42 @@
+{
+  "recorded_at_utc": "2026-11-17T13:37:27.3735077Z",
+  "status": "PASS",
+  "repository": "https://github.com/chatgptopenaiagi/ATOMVERSE-AI",
+  "visibility": "PUBLIC",
+  "tested_implementation_commit": "7bf2508da6970e13c7bf3efb2998e5b822cfafe9",
+  "default_branch": "main",
+  "remote_readback": [
+    {
+      "path": "README.md",
+      "blob_sha": "757cd6be263f5b67031ef6df492bf2b1631d7fe7",
+      "matches_local": true,
+      "content_read_back": true
+    },
+    {
+      "path": "SOFTWARE/atomverse/app.py",
+      "blob_sha": "b5d685019b60380b99b8b2870476f83d0cab9906",
+      "matches_local": true,
+      "content_read_back": true
+    },
+    {
+      "path": "ATOMVERSE-EVENT-SCHEMA.json",
+      "blob_sha": "77fb0563a7eea66e8aa9894e87f5a7e0e61dfff7",
+      "matches_local": true,
+      "content_read_back": true
+    },
+    {
+      "path": "EVIDENCE/ATOMVERSE-GUI-VERIFICATION.json",
+      "blob_sha": "045e145bf3dab8dfad24c89c4daf600ba17ac499",
+      "matches_local": true,
+      "content_read_back": true
+    },
+    {
+      "path": "ATOMVERSE-FINAL-REPORT.md",
+      "blob_sha": "f0bca1eacd9a648c9ec939ca68d4c3b992687c8c",
+      "matches_local": true,
+      "content_read_back": true
+    }
+  ],
+  "scope": "First working Windows alpha verified; broader roadmap remains incomplete",
+  "binary_release_published": false
+}
