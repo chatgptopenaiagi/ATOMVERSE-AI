@@ -1,0 +1,47 @@
+{
+  "mission": "002A",
+  "version": "0.2.0-alpha.2",
+  "recorded_at_utc": "2026-11-17T17:31:06.810101+00:00",
+  "packages": [
+    {
+      "name": "ATOMVERSE-AI-0.2.0-alpha.2-windows-x64.exe",
+      "bytes": 50786764,
+      "sha256": "abed85bb309f3486c9e424d6ac603a5cedec14c0c53b408495b60afe2bce97c3",
+      "platform": "Windows 11 x64; self-contained runtime"
+    },
+    {
+      "name": "atomverse_ai-0.2.0a2-py3-none-any.whl",
+      "bytes": 106578,
+      "sha256": "2a8b1411def9fa57d021215520f62df1aa6f43ce7d6820f2e098471bb898586c",
+      "platform": "Pure Python payload; desktop supported on Windows; runtime dependencies required"
+    },
+    {
+      "name": "ATOMVERSE-AI-0.2.0-alpha.2-android-arm64.apk",
+      "bytes": 22533756,
+      "sha256": "5b3f29266d2f4134c6037dbf86a7f559b401ec87af8f86ae625e0cd838075b12",
+      "platform": "Android ARM64; min API 24, target API 36; tested API 37 translated emulator"
+    }
+  ],
+  "tools": {
+    "pyinstaller": "6.22.3",
+    "desktop_python": "3.14.9",
+    "pyside6": "6.11.0",
+    "psutil": "7.2.2",
+    "android_gradle_plugin": "9.1.0",
+    "gradle": "9.3.1",
+    "jdk": "21.0.8",
+    "chaquopy": "17.2.0",
+    "android_python": "3.14.8",
+    "android_build_tools": "36.0.0"
+  },
+  "android_signing_certificate_sha256": "ed2378c073ae98fafa92731de472b1d9e96d8d1e82af21ca1fc43ab9b0b899c8",
+  "shared_build_input_sha256": {
+    "__init__.py": "c7fe7f27597952e1746d4a6085802aa71708e53f990a87453589abf68c9aade2",
+    "core.py": "ca81d875e1635d402bdc76e8ac3ea1303dc6b12a6bdedc25f2361b0903fba66f",
+    "science.py": "a345135841c5a4b23a477c75d77831f023db5785ecffc1b91ac4e9bbc5eebb2e",
+    "storage.py": "f624ca7eac479eb0314e0303c5272a01db6bf7259decff8a29fe983a7fee93e1",
+    "mobile.py": "cce28f80df475946ee5d60dd8da3e8c6aa9d370d66f09c180afddcd6f59026a3"
+  },
+  "original_zip_sha256": "4db1f2cec468e4adef3252ff71b9cba0ad5caa9a2ddf49c4d7d33c0a026767d2",
+  "version_decision": "New Android functionality and installed desktop entry point require the incremented prerelease. Original 0.2.0-alpha.1 assets are immutable."
+}

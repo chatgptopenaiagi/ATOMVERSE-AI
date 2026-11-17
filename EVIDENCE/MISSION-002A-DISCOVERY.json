@@ -1,0 +1,56 @@
+{
+  "mission": "002A",
+  "recorded_at_utc": "2026-11-17T15:32:39.3090431Z",
+  "baseline_commit": "e8c8ce0b74fbaf696e350cf02c95186b3ecf2838",
+  "baseline_tests": {
+    "passed": 79,
+    "elapsed_s": 10.04,
+    "failures": 0
+  },
+  "existing_release": {
+    "published_checksum_matches_local": true,
+    "zip_sha256": "4db1f2cec468e4adef3252ff71b9cba0ad5caa9a2ddf49c4d7d33c0a026767d2",
+    "existing_assets": "ZIP, original SHA256SUMS, BUILD-MANIFEST; immutable",
+    "tag": "v0.2.0-alpha.1"
+  },
+  "tools": {
+    "powershell": "7.7.0",
+    "python": "3.14.9 project/base and 3.15.2 CUDA",
+    "pytorch": "2.15.0+cu134; CUDA available",
+    "psutil": "7.2.2",
+    "existing_avds": 0,
+    "existing_system_image": "API 37 Google Play x86_64 revision 7",
+    "gradle": "9.3.1 existing installation",
+    "flutter": "3.47.8, Dart 3.13.7 installed",
+    "android_sdk_platforms": [
+      "35",
+      "36",
+      "36.1",
+      "37.0"
+    ],
+    "attached_android_devices": 0,
+    "jdk": "Installed 21.0.8 plus Android Studio 25 and system 27",
+    "pyinstaller": "6.22.3",
+    "android_build_tools": "36.0.0",
+    "ndk": [
+      "28.2.13676358",
+      "30.0.16248370"
+    ],
+    "emulator": "37.2.12.0",
+    "acceleration": "WHPX installed and usable",
+    "pyside6": "6.11.0"
+  },
+  "decisions": {
+    "reason": "A new Android client and platform adapter are material functionality; do not relabel as alpha.1 packaging",
+    "windows": "PyInstaller onefile, external Python/CUDA/model dependencies remain optional",
+    "android": "Native Java Canvas + Chaquopy 17.2.0 Python 3.14; original Python core, science and storage modules",
+    "version": "0.2.0-alpha.2",
+    "wheel": "Pure Python package with explicit Windows desktop support and separately declared native dependencies"
+  },
+  "open_verification": [
+    "ARM64 execution support of the available emulator has not yet been established",
+    "APK signing and app execution not yet tested",
+    "Standalone onefile worker lifecycle and wheel entry point require verification"
+  ],
+  "isolation": "New emulator state, Gradle state, signing key and packaging environments stay inside ignored project-local directories"
+}

@@ -23,3 +23,11 @@ node_modules/
 .idea/
 .DS_Store
 Thumbs.db
+.gradle/
+local.properties
+*.jks
+*.keystore
+*.apk
+*.aab
+*.whl
+*.hprof

@@ -1,0 +1,201 @@
+{
+  "version": "0.2.0-alpha.2",
+  "started_at_utc": "2026-11-17T15:47:41.781Z",
+  "packaged_executable": true,
+  "checks": {
+    "native_window_and_opt_in_startup": true,
+    "simulation_label_and_isolation": true,
+    "real_arx_import": 38,
+    "continuous_cpu_and_memory_sampling": true,
+    "live_values_drive_deterministic_visual_changes": true,
+    "gpu_telemetry": {
+      "classification": "OBSERVED",
+      "metric_names": [
+        "utilization_pct",
+        "vram_used_bytes",
+        "vram_total_bytes",
+        "temperature_c",
+        "power_w",
+        "clock_mhz"
+      ],
+      "unavailable": {}
+    },
+    "real_windows_process_relationships": 24,
+    "cpu_benchmark_passed": {
+      "checksum": {
+        "unit": "count",
+        "value": 98304.0
+      },
+      "duration_ms": {
+        "unit": "ms",
+        "value": 2001.7952999987756
+      },
+      "iterations": {
+        "unit": "count",
+        "value": 256
+      },
+      "mean_iteration_ms": {
+        "unit": "ms",
+        "value": 7.819512890620217
+      },
+      "throughput_gflops": {
+        "unit": "GFLOP/s",
+        "value": 0.008381084719306845
+      }
+    },
+    "gpu_benchmark_passed": {
+      "allocated_peak_mib": {
+        "unit": "MiB",
+        "value": 9.125
+      },
+      "checksum": {
+        "unit": "count",
+        "value": 65536.0
+      },
+      "duration_ms": {
+        "unit": "ms",
+        "value": 300.0468999998702
+      },
+      "iterations": {
+        "unit": "count",
+        "value": 4113
+      },
+      "mean_iteration_ms": {
+        "unit": "ms",
+        "value": 0.07295086311691472
+      },
+      "throughput_gflops": {
+        "unit": "GFLOP/s",
+        "value": 459.95935574091817
+      }
+    },
+    "clean_shutdown": true
+  },
+  "status": "FAIL",
+  "error": "AssertionError:  (step 4)",
+  "elapsed_s": 30.12498229999983,
+  "retained_events": 1218,
+  "benchmarks": [
+    {
+      "component": "cpu",
+      "status": "PASS",
+      "metrics": {
+        "checksum": {
+          "unit": "count",
+          "value": 98304.0
+        },
+        "duration_ms": {
+          "unit": "ms",
+          "value": 2001.7952999987756
+        },
+        "iterations": {
+          "unit": "count",
+          "value": 256
+        },
+        "mean_iteration_ms": {
+          "unit": "ms",
+          "value": 7.819512890620217
+        },
+        "throughput_gflops": {
+          "unit": "GFLOP/s",
+          "value": 0.008381084719306845
+        }
+      },
+      "configuration": {
+        "backend": "stdlib-matrix",
+        "device": "AMD64",
+        "dtype": "python-float",
+        "kind": "cpu",
+        "max_wall_seconds": 30,
+        "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+        "python": "3.14.9",
+        "seconds": 2.0,
+        "size": 32,
+        "synchronized": true,
+        "threads": 1,
+        "warmup_iterations": 1
+      }
+    },
+    {
+      "component": "gpu",
+      "status": "PASS",
+      "metrics": {
+        "allocated_peak_mib": {
+          "unit": "MiB",
+          "value": 9.125
+        },
+        "checksum": {
+          "unit": "count",
+          "value": 65536.0
+        },
+        "duration_ms": {
+          "unit": "ms",
+          "value": 300.0468999998702
+        },
+        "iterations": {
+          "unit": "count",
+          "value": 4113
+        },
+        "mean_iteration_ms": {
+          "unit": "ms",
+          "value": 0.07295086311691472
+        },
+        "throughput_gflops": {
+          "unit": "GFLOP/s",
+          "value": 459.95935574091817
+        }
+      },
+      "configuration": {
+        "backend": "pytorch",
+        "cuda": "13.4",
+        "cudnn": 92600,
+        "device": "NVIDIA GeForce RTX 3050",
+        "dtype": "float32",
+        "kind": "gpu",
+        "max_wall_seconds": 30,
+        "python": "3.15.2",
+        "seconds": 0.3,
+        "size": 256,
+        "synchronized": true,
+        "tensor_bytes": 786432,
+        "tf32": false,
+        "torch": "2.15.0+cu134",
+        "vram_reserve_mib": 1536,
+        "warmup_iterations": 1
+      }
+    }
+  ],
+  "performance": {
+    "method": "15-second idle-observer phase and 15-second controlled-load phase; three owned 12-second CPU workloads plus bounded CPU/GPU benchmark; sampling 1 s, 24 processes, 30 fps; CPU normalized across logical processors",
+    "phases": {
+      "idle": {
+        "samples": 13,
+        "cpu_pct_system_mean": 3.353563934492141,
+        "working_set_bytes_max": 169975808,
+        "sample_duration_ms_p95": 738.3121000020765,
+        "scheduling_delay_ms_p95": 11.721599999873433,
+        "paint_ms_mean": 8.010695424752122,
+        "system_cpu_pct_min": 13.492063492063492,
+        "system_cpu_pct_max": 60.38461538461539
+      },
+      "active": {
+        "samples": 14,
+        "cpu_pct_system_mean": 3.8545440050405557,
+        "working_set_bytes_max": 186589184,
+        "sample_duration_ms_p95": 454.62099999713246,
+        "scheduling_delay_ms_p95": 14.897500001097796,
+        "paint_ms_mean": 12.207364666668408,
+        "system_cpu_pct_min": 13.093709884467266,
+        "system_cpu_pct_max": 75.71801566579634
+      }
+    },
+    "gui_tick_delay_ms_p95": 23.499999998603016,
+    "gui_tick_delay_ms_max": 139.3616999986989,
+    "paint_ms_p95": 38.69690000283299,
+    "frames": 553,
+    "particle_limit": 256,
+    "effective_particle_limit": 256,
+    "queue_capacity": 4,
+    "display_batches_dropped": 0
+  }
+}

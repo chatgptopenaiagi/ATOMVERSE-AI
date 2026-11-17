@@ -12,7 +12,7 @@ from .core import validate_event
 def command(flag):
     if getattr(sys, 'frozen', False):
         return sys.executable, [flag]
-    return sys.executable, [str(Path(__file__).parents[1] / 'main.py'), flag]
+    return sys.executable, [str(Path(__file__).with_name('__main__.py')), flag]
 
 
 class LiveController(QObject):

@@ -1,0 +1,34 @@
+{
+  "issues": [
+    {
+      "finding": "First EXE candidate exceeded the 700 ms p95 sampling limit during concurrent Android compilation (738.3 ms).",
+      "resolution": "Kept the threshold, preserved failed evidence and verified the final executable with the owned emulator stopped.",
+      "status": "RESOLVED"
+    },
+    {
+      "finding": "Android Activity recreation overlapped first SQLite initialization; ready could precede the first packet.",
+      "resolution": "Serialized Mobile construction and set readiness after packet generation; concurrent initialization test and signed-APK execution pass.",
+      "status": "RESOLVED"
+    },
+    {
+      "finding": "Fresh PyPI Qt under Anaconda loaded an incompatible ICU DLL.",
+      "resolution": "PE imports/exports identified the collision; the installed entry point loads Windows ICU by absolute path for the PyPI layout only. Existing environments and global PATH were not modified.",
+      "status": "RESOLVED"
+    },
+    {
+      "finding": "Cross-platform verification initially omitted OBSERVED fixtures and used an observed-only readback on mixed history.",
+      "resolution": "Included a genuine ARX observation and compared all retained classes. Nine desktop events and 149 Android events retain their exact event bodies.",
+      "status": "TEST HARNESS CORRECTED"
+    },
+    {
+      "finding": "An early system-picker download occurred before asynchronous export completed.",
+      "resolution": "Read back the completed 159-event file; Android imported it through the actual system picker.",
+      "status": "VERIFIED AFTER COMPLETION"
+    },
+    {
+      "finding": "The API 37 emulator showed System UI ANRs during boot before ATOMVERSE launch.",
+      "resolution": "Allocated four virtual cores / 4 GiB in the owned AVD, stabilized System UI and then executed the signed ARM64 APK. Physical-device coverage remains unavailable.",
+      "status": "ENVIRONMENT LIMITATION RECORDED"
+    }
+  ]
+}

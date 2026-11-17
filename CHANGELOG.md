@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0-alpha.2 — Multiplatform Expansion, 2026-11-17
+
+- Added a signed native Android ARM64 client using the existing Python validation, scientific classifications, visual-energy equations, SQLite and replay code through Chaquopy.
+- Added touch navigation, explicit foreground Android observation, unavailable-sensor states, protected imports and compatible JSON exports.
+- Added standalone Windows one-file packaging and a Python wheel with a functional `atomverse-ai` entry point and installed worker paths.
+- Preserved the original 0.2.0-alpha.1 ZIP, release assets, tests and evidence. New functionality uses an incremented prerelease instead of replacing verified binaries.
+- Added packaging, mobile adapter, cross-platform data and real signed-APK instrumentation checks. See Mission 002A evidence for executed checks and coverage limits.
+
 ## 0.2.0-alpha.1 — The Living Universe, 2026-11-17
 
 - Added isolated continuous CPU/core, RAM/commit, disk and NVIDIA observation with visible source controls and bounded sampling.

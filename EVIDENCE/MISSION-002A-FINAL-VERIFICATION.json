@@ -1,0 +1,50 @@
+{
+  "mission": "002A",
+  "version": "0.2.0-alpha.2",
+  "status": "LOCAL_ACCEPTANCE_PASS",
+  "publication": {
+    "status": "PENDING"
+  },
+  "packages": [
+    {
+      "name": "ATOMVERSE-AI-0.2.0-alpha.2-windows-x64.exe",
+      "bytes": 50786764,
+      "sha256": "abed85bb309f3486c9e424d6ac603a5cedec14c0c53b408495b60afe2bce97c3",
+      "platform": "Windows 11 x64; self-contained runtime"
+    },
+    {
+      "name": "atomverse_ai-0.2.0a2-py3-none-any.whl",
+      "bytes": 106578,
+      "sha256": "2a8b1411def9fa57d021215520f62df1aa6f43ce7d6820f2e098471bb898586c",
+      "platform": "Pure Python payload; desktop supported on Windows; runtime dependencies required"
+    },
+    {
+      "name": "ATOMVERSE-AI-0.2.0-alpha.2-android-arm64.apk",
+      "bytes": 22533756,
+      "sha256": "5b3f29266d2f4134c6037dbf86a7f559b401ec87af8f86ae625e0cd838075b12",
+      "platform": "Android ARM64; min API 24, target API 36; tested API 37 translated emulator"
+    }
+  ],
+  "acceptance": {
+    "original_human_vision_preserved": true,
+    "original_zip_bytes_preserved": true,
+    "original_event_contract_and_core_preserved": true,
+    "windows_exe": "PASS",
+    "python_wheel": "PASS",
+    "android_arm64_apk": "PASS_ON_TRANSLATED_EMULATOR",
+    "cross_platform_history": "PASS_ALL_FIVE_CLASSES",
+    "python_tests_passed": 85,
+    "original_tests_retained": 79,
+    "android_runtime_checks_passed": 20,
+    "physical_android_device": "NOT_EXECUTED_NO_DEVICE_AVAILABLE",
+    "other_android_api_versions": "NOT_EXECUTED",
+    "linux_macos_desktop": "NOT_SUPPORTED_OR_CLAIMED"
+  },
+  "preservation": {
+    "original_release": "v0.2.0-alpha.1",
+    "zip_sha256": "4db1f2cec468e4adef3252ff71b9cba0ad5caa9a2ddf49c4d7d33c0a026767d2",
+    "credentials_changed": false,
+    "unrelated_source_or_runtime_installations_modified": false,
+    "owned_emulator": "emulator-5580 stopped; unrelated emulator processes left untouched"
+  }
+}

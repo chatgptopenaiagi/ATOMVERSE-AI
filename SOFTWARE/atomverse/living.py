@@ -1,6 +1,7 @@
 """Mission 002 extension of the verified Mission 001 native application."""
 from collections import deque
 import json
+from . import __version__
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtGui import QColor
 from PySide6.QtWidgets import QCheckBox, QDoubleSpinBox, QFormLayout, QSpinBox, QTreeWidget, QTreeWidgetItem, QLabel, QComboBox, QScrollArea
@@ -28,7 +29,7 @@ class LivingWindow(Window):
         for w in self.findChildren(QLabel):
             text = w.text()
             if text.startswith('GENESIS\n'):
-                w.setText('LIVING UNIVERSE\n0.2.0-alpha.1\nLocal · experimental')
+                w.setText(f'LIVING UNIVERSE\n{__version__}\nLocal · experimental')
             elif text == 'Hardware observations':
                 w.setText('System observer')
             elif text.startswith('Import an ARX report or sample hardware.'):
@@ -215,7 +216,20 @@ class LivingWindow(Window):
 
     def import_path(self, path):
         from .integrations import import_selected
-        return self.submit(lambda: import_selected(path), self.ingest)
+        return self.submit(lambda: import_selected(path), self.ingest_exchange)
+
+    def ingest_exchange(self, events):
+        """Explicit import routes simulated records to the isolated demo workspace."""
+        measured = [e for e in events if e['data_kind'] != 'synthetic']
+        simulated = [e for e in events if e['data_kind'] == 'synthetic']
+        if measured:
+            self.ingest(measured)
+        if simulated:
+            self.synthetic = simulated[-1500:]
+            if not measured:
+                self.mode.setCurrentIndex(0)
+            self.refresh()
+            self.status.showMessage(f'Imported {len(measured)} observed/interpretation records and {len(simulated)} separately labeled simulation records. Demo imports do not enter observed memory.')
 
     def load_history(self):
         if self.observer.active:

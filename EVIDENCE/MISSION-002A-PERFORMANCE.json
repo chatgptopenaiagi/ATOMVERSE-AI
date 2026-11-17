@@ -1,0 +1,73 @@
+{
+  "windows_exe": {
+    "method": "15-second idle-observer phase and 15-second controlled-load phase; three owned 12-second CPU workloads plus bounded CPU/GPU benchmark; sampling 1 s, 24 processes, 30 fps; CPU normalized across logical processors",
+    "phases": {
+      "idle": {
+        "samples": 15,
+        "cpu_pct_system_mean": 4.389805448631146,
+        "working_set_bytes_max": 172793856,
+        "sample_duration_ms_p95": 295.1545999967493,
+        "scheduling_delay_ms_p95": 14.582600000721868,
+        "paint_ms_mean": 13.209640803928234,
+        "system_cpu_pct_min": 49.48717948717949,
+        "system_cpu_pct_max": 91.27604166666667
+      },
+      "active": {
+        "samples": 15,
+        "cpu_pct_system_mean": 4.635014800027213,
+        "working_set_bytes_max": 186908672,
+        "sample_duration_ms_p95": 174.2803000015556,
+        "scheduling_delay_ms_p95": 14.349299999594223,
+        "paint_ms_mean": 19.38026395549241,
+        "system_cpu_pct_min": 45.8498023715415,
+        "system_cpu_pct_max": 91.41025641025641
+      }
+    },
+    "gui_tick_delay_ms_p95": 24.84670000121696,
+    "gui_tick_delay_ms_max": 2331.1973000010767,
+    "paint_ms_p95": 26.736200001323596,
+    "frames": 694,
+    "particle_limit": 256,
+    "effective_particle_limit": 256,
+    "queue_capacity": 4,
+    "display_batches_dropped": 0
+  },
+  "installed_wheel": {
+    "method": "15-second idle-observer phase and 15-second controlled-load phase; three owned 12-second CPU workloads plus bounded CPU/GPU benchmark; sampling 1 s, 24 processes, 30 fps; CPU normalized across logical processors",
+    "phases": {
+      "idle": {
+        "samples": 15,
+        "cpu_pct_system_mean": 3.322062605481916,
+        "working_set_bytes_max": 159719424,
+        "sample_duration_ms_p95": 139.17550000041956,
+        "scheduling_delay_ms_p95": 15.72160000068834,
+        "paint_ms_mean": 9.29740467884754,
+        "system_cpu_pct_min": 6.538461538461538,
+        "system_cpu_pct_max": 38.541666666666664
+      },
+      "active": {
+        "samples": 15,
+        "cpu_pct_system_mean": 3.1714040251949,
+        "working_set_bytes_max": 171016192,
+        "sample_duration_ms_p95": 147.81679999941844,
+        "scheduling_delay_ms_p95": 11.966399997618282,
+        "paint_ms_mean": 11.950994066695179,
+        "system_cpu_pct_min": 32.17948717948718,
+        "system_cpu_pct_max": 53.359683794466406
+      }
+    },
+    "gui_tick_delay_ms_p95": 24.36980000056792,
+    "gui_tick_delay_ms_max": 1692.6336000025913,
+    "paint_ms_p95": 30.643199999758508,
+    "frames": 638,
+    "particle_limit": 256,
+    "effective_particle_limit": 256,
+    "queue_capacity": 4,
+    "display_batches_dropped": 0
+  },
+  "android": {
+    "frames": 168,
+    "last_paint_ms": 0.0568,
+    "note": "Single measured final frame, not a latency distribution or physical-phone benchmark; 256-object / 10\u201330 fps rendering caps."
+  }
+}

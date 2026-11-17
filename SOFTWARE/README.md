@@ -1,5 +1,16 @@
 # Run and build
 
+## Mission 002A distribution builds
+
+The current version is 0.2.0-alpha.2. [Installation and platform matrix](../INSTALLATION.md) describes the standalone EXE, Python wheel and Android APK. Existing 0.2.0-alpha.1 assets are immutable.
+
+```powershell
+.\scripts\build-standalone.ps1 -BuildPython '<existing-python-with-PyInstaller>'
+python -m build --wheel --outdir dist/multiplatform/0.2.0-alpha.2
+```
+
+The EXE includes Python/Qt and no CUDA or model weights. The wheel declares PySide6 and psutil, and installs `atomverse-ai` / `python -m atomverse`. Worker entry points resolve inside the installed package. A clean environment is required for wheel acceptance. [Android build and instrumentation instructions](android/README.md) use the same core via Chaquopy, with project-local Gradle dependencies and private signing material. License texts can be extracted with `--export-licenses NEW_DIRECTORY`.
+
 ## Portable Windows application
 
 Open dist/ATOMVERSE-AI/ATOMVERSE-AI.exe after building. Keep the entire directory together. The app starts in a labeled demo when no observed history exists. No command-line knowledge is needed for import, sampling, benchmarking, replay or export.

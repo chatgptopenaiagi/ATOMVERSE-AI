@@ -1,5 +1,11 @@
 # Roadmap
 
+## Mission 002A — 0.2.0-alpha.2
+
+Standalone Windows EXE, installed Python wheel and native Android ARM64 distribution share one scientific core. Preserve 0.2.0-alpha.1 assets and classify Android device coverage separately from compilation. Current platform results are recorded in Mission 002A evidence.
+
+Next: physical ARM64 phone/tablet coverage across supported Android versions; accessible mobile scientific tables; Android CSV export and optional authorized local AI endpoint; additional desktop OS adapters only after actual runtime testing. No unsupported sensor or model capability is promised by a package tag.
+
 ## Gate 1 — public genesis
 
 **Completed:** public documentation commit and remote readback recorded in EVIDENCE/STAGE-1-VERIFICATION.json.

@@ -1,0 +1,607 @@
+{
+  "format": "atomverse-export/1",
+  "exported_at_utc": "2026-11-17T17:15:34.235Z",
+  "events": [
+    {
+      "calculated": {
+        "confidence": 1.0,
+        "intensity": 0.41015625,
+        "lower": 0,
+        "metric": "utilization_pct",
+        "scale": 1.0,
+        "unit": "%",
+        "upper": 100,
+        "value": 41.015625
+      },
+      "category": "observation",
+      "component": "cpu",
+      "configuration": {
+        "sampling_interval_s": 1.0
+      },
+      "data_kind": "observed",
+      "event_id": "5911c879-aad0-471a-a5bf-eff80b6364b8",
+      "message": "",
+      "metrics": {
+        "frequency_mhz": {
+          "unit": "MHz",
+          "value": 3901.0
+        },
+        "logical_processors": {
+          "unit": "count",
+          "value": 12
+        },
+        "utilization_pct": {
+          "unit": "%",
+          "value": 41.015625
+        }
+      },
+      "provenance": {
+        "api": "GetSystemTimes / NtQuerySystemInformation via psutil",
+        "psutil_version": "7.2.2"
+      },
+      "schema_version": "1.1",
+      "scientific": {
+        "classification": "DERIVED",
+        "entity": {
+          "logical_index": -1,
+          "type": "cpu"
+        },
+        "entity_id": "system:cpu",
+        "metric_metadata": {
+          "frequency_mhz": {
+            "classification": "OBSERVED"
+          },
+          "logical_processors": {
+            "classification": "OBSERVED"
+          },
+          "utilization_pct": {
+            "classification": "DERIVED",
+            "formula": "clamp(100 * (delta_total_s - delta_idle_s) / delta_total_s, 0, 100)",
+            "inputs": {
+              "current_user_system_idle": [
+                26017.53125,
+                19287.062500000004,
+                210906.0625
+              ],
+              "delta_idle_s": 7.078125,
+              "delta_total_s": 12.0,
+              "previous_user_system_idle": [
+                26013.53125,
+                19286.140625000004,
+                210898.984375
+              ]
+            }
+          }
+        },
+        "relationships": [],
+        "retention": "rolling",
+        "session_id": "81bce537-6744-4d35-933e-6fe9b9e1b3e3",
+        "unavailable": {
+          "temperature_c": "No verified CPU temperature sensor"
+        }
+      },
+      "source": "psutil.cpu_times/Windows",
+      "status": "INFO",
+      "timestamp_utc": "2026-11-17T14:51:05.409Z",
+      "visual": {
+        "color": "#65baff",
+        "visual_energy": 0.41015625
+      }
+    },
+    {
+      "calculated": {
+        "confidence": 1.0,
+        "intensity": 0.39322916666666663,
+        "lower": 0,
+        "metric": "utilization_pct",
+        "scale": 1.0,
+        "unit": "%",
+        "upper": 100,
+        "value": 39.322916666666664
+      },
+      "category": "observation",
+      "component": "cpu",
+      "configuration": {
+        "sampling_interval_s": 1.0
+      },
+      "data_kind": "observed",
+      "event_id": "4bf0a2bf-1502-4e1e-8143-4666fdcf1c68",
+      "message": "",
+      "metrics": {
+        "frequency_mhz": {
+          "unit": "MHz",
+          "value": 3901.0
+        },
+        "logical_processors": {
+          "unit": "count",
+          "value": 12
+        },
+        "utilization_pct": {
+          "unit": "%",
+          "value": 39.322916666666664
+        }
+      },
+      "provenance": {
+        "api": "GetSystemTimes / NtQuerySystemInformation via psutil",
+        "psutil_version": "7.2.2"
+      },
+      "schema_version": "1.1",
+      "scientific": {
+        "classification": "DERIVED",
+        "entity": {
+          "logical_index": -1,
+          "type": "cpu"
+        },
+        "entity_id": "system:cpu",
+        "metric_metadata": {
+          "frequency_mhz": {
+            "classification": "OBSERVED"
+          },
+          "logical_processors": {
+            "classification": "OBSERVED"
+          },
+          "utilization_pct": {
+            "classification": "DERIVED",
+            "formula": "clamp(100 * (delta_total_s - delta_idle_s) / delta_total_s, 0, 100)",
+            "inputs": {
+              "current_user_system_idle": [
+                26021.28125,
+                19288.031250000004,
+                210913.34375
+              ],
+              "delta_idle_s": 7.28125,
+              "delta_total_s": 12.0,
+              "previous_user_system_idle": [
+                26017.53125,
+                19287.062500000004,
+                210906.0625
+              ]
+            }
+          }
+        },
+        "relationships": [],
+        "retention": "rolling",
+        "session_id": "81bce537-6744-4d35-933e-6fe9b9e1b3e3",
+        "unavailable": {
+          "temperature_c": "No verified CPU temperature sensor"
+        }
+      },
+      "source": "psutil.cpu_times/Windows",
+      "status": "INFO",
+      "timestamp_utc": "2026-11-17T14:51:06.408Z",
+      "visual": {
+        "color": "#65baff",
+        "visual_energy": 0.39322917
+      }
+    },
+    {
+      "calculated": {
+        "confidence": 1.0,
+        "intensity": 0.14713541666666666,
+        "lower": 0,
+        "metric": "utilization_pct",
+        "scale": 1.0,
+        "unit": "%",
+        "upper": 100,
+        "value": 14.713541666666666
+      },
+      "category": "observation",
+      "component": "cpu",
+      "configuration": {
+        "sampling_interval_s": 1.0
+      },
+      "data_kind": "observed",
+      "event_id": "c2192779-4960-4115-8f53-796adfc373b3",
+      "message": "",
+      "metrics": {
+        "frequency_mhz": {
+          "unit": "MHz",
+          "value": 3901.0
+        },
+        "logical_processors": {
+          "unit": "count",
+          "value": 12
+        },
+        "utilization_pct": {
+          "unit": "%",
+          "value": 14.713541666666666
+        }
+      },
+      "provenance": {
+        "api": "GetSystemTimes / NtQuerySystemInformation via psutil",
+        "psutil_version": "7.2.2"
+      },
+      "schema_version": "1.1",
+      "scientific": {
+        "classification": "DERIVED",
+        "entity": {
+          "logical_index": -1,
+          "type": "cpu"
+        },
+        "entity_id": "system:cpu",
+        "metric_metadata": {
+          "frequency_mhz": {
+            "classification": "OBSERVED"
+          },
+          "logical_processors": {
+            "classification": "OBSERVED"
+          },
+          "utilization_pct": {
+            "classification": "DERIVED",
+            "formula": "clamp(100 * (delta_total_s - delta_idle_s) / delta_total_s, 0, 100)",
+            "inputs": {
+              "current_user_system_idle": [
+                26022.015625,
+                19289.062500000004,
+                210923.578125
+              ],
+              "delta_idle_s": 10.234375,
+              "delta_total_s": 12.0,
+              "previous_user_system_idle": [
+                26021.28125,
+                19288.031250000004,
+                210913.34375
+              ]
+            }
+          }
+        },
+        "relationships": [],
+        "retention": "rolling",
+        "session_id": "81bce537-6744-4d35-933e-6fe9b9e1b3e3",
+        "unavailable": {
+          "temperature_c": "No verified CPU temperature sensor"
+        }
+      },
+      "source": "psutil.cpu_times/Windows",
+      "status": "INFO",
+      "timestamp_utc": "2026-11-17T14:51:07.413Z",
+      "visual": {
+        "color": "#65baff",
+        "visual_energy": 0.14713542
+      }
+    },
+    {
+      "calculated": {
+        "confidence": 1.0,
+        "intensity": 0.08723958333333334,
+        "lower": 0,
+        "metric": "utilization_pct",
+        "scale": 1.0,
+        "unit": "%",
+        "upper": 100,
+        "value": 8.723958333333334
+      },
+      "category": "observation",
+      "component": "cpu",
+      "configuration": {
+        "sampling_interval_s": 1.0
+      },
+      "data_kind": "observed",
+      "event_id": "12938f29-1134-4efb-9378-8eb095ae73a0",
+      "message": "",
+      "metrics": {
+        "frequency_mhz": {
+          "unit": "MHz",
+          "value": 3901.0
+        },
+        "logical_processors": {
+          "unit": "count",
+          "value": 12
+        },
+        "utilization_pct": {
+          "unit": "%",
+          "value": 8.723958333333334
+        }
+      },
+      "provenance": {
+        "api": "GetSystemTimes / NtQuerySystemInformation via psutil",
+        "psutil_version": "7.2.2"
+      },
+      "schema_version": "1.1",
+      "scientific": {
+        "classification": "DERIVED",
+        "entity": {
+          "logical_index": -1,
+          "type": "cpu"
+        },
+        "entity_id": "system:cpu",
+        "metric_metadata": {
+          "frequency_mhz": {
+            "classification": "OBSERVED"
+          },
+          "logical_processors": {
+            "classification": "OBSERVED"
+          },
+          "utilization_pct": {
+            "classification": "DERIVED",
+            "formula": "clamp(100 * (delta_total_s - delta_idle_s) / delta_total_s, 0, 100)",
+            "inputs": {
+              "current_user_system_idle": [
+                26022.5,
+                19289.625000000004,
+                210934.53125
+              ],
+              "delta_idle_s": 10.953125,
+              "delta_total_s": 12.0,
+              "previous_user_system_idle": [
+                26022.015625,
+                19289.062500000004,
+                210923.578125
+              ]
+            }
+          }
+        },
+        "relationships": [],
+        "retention": "rolling",
+        "session_id": "81bce537-6744-4d35-933e-6fe9b9e1b3e3",
+        "unavailable": {
+          "temperature_c": "No verified CPU temperature sensor"
+        }
+      },
+      "source": "psutil.cpu_times/Windows",
+      "status": "INFO",
+      "timestamp_utc": "2026-11-17T14:51:08.405Z",
+      "visual": {
+        "color": "#65baff",
+        "visual_energy": 0.08723958
+      }
+    },
+    {
+      "schema_version": "1.1",
+      "event_id": "0f117a7f-10fb-4ba1-8521-5ae406caac83",
+      "timestamp_utc": "2026-11-17T15:42:47.815Z",
+      "source": "historical-comparison/1",
+      "category": "comparison",
+      "component": "cpu",
+      "status": "INFO",
+      "data_kind": "observed",
+      "metrics": {
+        "earlier_mean": {
+          "value": 29.90756263540494,
+          "unit": "%"
+        },
+        "later_mean": {
+          "value": 39.27083333333333,
+          "unit": "%"
+        }
+      },
+      "message": "Equal-count chronological windows of the same source, entity and unit. Descriptive change; workload conditions and cause are not established.",
+      "provenance": {
+        "event_ids": [
+          "5ff876a6-b9ab-4284-9597-b5aa7e5a693b",
+          "5df1ca36-0383-4786-8e8e-6d7e6502c904",
+          "8cf9de92-3264-432c-b4b3-018d01f7ceaa",
+          "8ada636e-945e-4a8a-84f8-1c54ea4bd663",
+          "fb57f669-31fe-4706-8d12-fbd73f25f859",
+          "67a70833-5f8b-4049-85c9-8228f4a7f632",
+          "6cb3d205-0f93-4ff1-a753-038f754a6f3a",
+          "91450ec2-aeaf-490b-97cd-393c538333d6",
+          "398c6900-8a1b-46aa-90a4-dbddf9386358",
+          "de8917c1-e3d4-4e7a-beb7-2dfcd7ad00a6",
+          "9e55c54b-815c-4bf8-b54a-373bb5ea2fa6",
+          "4fab3ef1-0a2e-4543-b2f9-5df19192a313",
+          "10144043-a59b-4301-9b58-489e4f779286",
+          "ca7fbd33-79d9-4f7e-ae6a-0af8f9ff5aba",
+          "4f676525-3800-43b3-ad9a-d337d15dcb8a",
+          "29482c93-18ab-45d7-948e-6f1e1a5f3315",
+          "5911c879-aad0-471a-a5bf-eff80b6364b8",
+          "4bf0a2bf-1502-4e1e-8143-4666fdcf1c68",
+          "c2192779-4960-4115-8f53-796adfc373b3",
+          "12938f29-1134-4efb-9378-8eb095ae73a0"
+        ],
+        "metric": "utilization_pct"
+      },
+      "configuration": {},
+      "calculated": {
+        "metric": null,
+        "confidence": 1.0,
+        "scale": 1.0,
+        "intensity": 0.0
+      },
+      "visual": {
+        "visual_energy": 0.0,
+        "color": "#65baff"
+      },
+      "scientific": {
+        "classification": "DERIVED",
+        "session_id": "",
+        "entity_id": "system:cpu",
+        "entity": {},
+        "relationships": [],
+        "metric_metadata": {
+          "earlier_mean": {
+            "classification": "DERIVED",
+            "formula": "sum(values) / count(values)",
+            "inputs": {
+              "values": [
+                6.901041666666667,
+                17.447916666666668,
+                12.369791666666666,
+                25.78125,
+                10.533159947984394,
+                28.328981723237597,
+                55.786736020806245,
+                50.26109660574413,
+                50.38961038961039,
+                41.276041666666664
+              ]
+            }
+          },
+          "later_mean": {
+            "classification": "DERIVED",
+            "formula": "sum(values) / count(values)",
+            "inputs": {
+              "values": [
+                51.5625,
+                47.265625,
+                50.651041666666664,
+                41.40625,
+                51.171875,
+                46.875,
+                41.015625,
+                39.322916666666664,
+                14.713541666666666,
+                8.723958333333334
+              ]
+            }
+          }
+        },
+        "unavailable": {},
+        "retention": "protected"
+      }
+    },
+    {
+      "schema_version": "1.1",
+      "event_id": "06d9c0bd-9ac8-4813-9fdd-dd301102d2db",
+      "timestamp_utc": "2026-11-17T15:42:47.815Z",
+      "source": "Mission 002A AI-authored compatibility explanation",
+      "category": "observation",
+      "component": "ai",
+      "status": "INFO",
+      "data_kind": "interpretation",
+      "metrics": {},
+      "message": "These recorded utilization values describe sampled CPU activity. They do not establish the cause of any change.",
+      "provenance": {
+        "event_ids": [
+          "5911c879-aad0-471a-a5bf-eff80b6364b8",
+          "4bf0a2bf-1502-4e1e-8143-4666fdcf1c68"
+        ],
+        "purpose": "cross-platform classification fixture"
+      },
+      "configuration": {},
+      "calculated": {
+        "metric": null,
+        "confidence": 1.0,
+        "scale": 1.0,
+        "intensity": 0.0
+      },
+      "visual": {
+        "visual_energy": 0.0,
+        "color": "#65baff"
+      },
+      "scientific": {
+        "classification": "AI_INTERPRETED",
+        "session_id": "",
+        "entity_id": "compatibility:explanation",
+        "entity": {},
+        "relationships": [],
+        "metric_metadata": {},
+        "unavailable": {},
+        "retention": "protected"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "event_id": "demo-000",
+      "timestamp_utc": "2026-01-01T00:00:00.000Z",
+      "source": "demo-generator",
+      "category": "benchmark",
+      "component": "cpu",
+      "status": "PASS",
+      "data_kind": "synthetic",
+      "metrics": {
+        "utilization_pct": {
+          "value": 13,
+          "unit": "%"
+        }
+      },
+      "message": "SYNTHETIC demonstration. Not a measurement.",
+      "provenance": {
+        "generator": "deterministic-demo/1"
+      },
+      "configuration": {},
+      "calculated": {
+        "metric": "utilization_pct",
+        "confidence": 1.0,
+        "scale": 1.0,
+        "intensity": 0.13,
+        "value": 13,
+        "unit": "%",
+        "lower": 0,
+        "upper": 100
+      },
+      "visual": {
+        "visual_energy": 0.13,
+        "color": "#ffd17b"
+      }
+    },
+    {
+      "schema_version": "1.1",
+      "event_id": "c06e637e-9645-453c-8738-fd2f6f215164",
+      "timestamp_utc": "2026-11-17T15:42:47.821Z",
+      "source": "Mission 002A adapter capability declaration",
+      "category": "observation",
+      "component": "guardian",
+      "status": "INFO",
+      "data_kind": "observed",
+      "metrics": {},
+      "message": "Software capability declaration; no hardware value supplied.",
+      "provenance": {},
+      "configuration": {},
+      "calculated": {
+        "metric": null,
+        "confidence": 1.0,
+        "scale": 1.0,
+        "intensity": 0.0
+      },
+      "visual": {
+        "visual_energy": 0.0,
+        "color": "#65baff"
+      },
+      "scientific": {
+        "classification": "UNAVAILABLE",
+        "session_id": "",
+        "entity_id": "android:gpu-capability",
+        "entity": {},
+        "relationships": [],
+        "metric_metadata": {},
+        "unavailable": {
+          "gpu_utilization": "Android adapter has no verified public GPU workload sensor"
+        },
+        "retention": "protected"
+      }
+    },
+    {
+      "calculated": {
+        "confidence": 1.0,
+        "intensity": 0.375,
+        "lower": 0,
+        "metric": "logical_processors",
+        "scale": 1.0,
+        "unit": "count",
+        "upper": 32,
+        "value": 12
+      },
+      "category": "inventory",
+      "component": "cpu",
+      "configuration": {},
+      "data_kind": "observed",
+      "event_id": "ccccbe7cb447c341204b51c16ed5b3510f8b3c5035d55dc6ef422335b86d374f",
+      "message": "AMD Ryzen 5 5600G with Radeon Graphics         ",
+      "metrics": {
+        "cores": {
+          "unit": "count",
+          "value": 6
+        },
+        "logical_processors": {
+          "unit": "count",
+          "value": 12
+        }
+      },
+      "provenance": {
+        "arx_schema": "0.1",
+        "pointer": "/machine/cpu",
+        "scanner_version": "4.0.0b6",
+        "sha256": "f84f0c899be764874d297caab3c2f0b083627d46ae463c1b3b58b6484af5761f"
+      },
+      "schema_version": "1.0",
+      "source": "ARX",
+      "status": "INFO",
+      "timestamp_utc": "2026-11-17T13:00:19.237Z",
+      "visual": {
+        "color": "#65baff",
+        "visual_energy": 0.375
+      }
+    }
+  ]
+}

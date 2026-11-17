@@ -1,4 +1,10 @@
-# ATOMVERSE AI architecture — 0.2.0-alpha.1
+# ATOMVERSE AI architecture — 0.2.0-alpha.2
+
+Mission 002A packages one computational foundation in three formats. Windows EXE and wheel use the existing PySide6 application. Android uses a native Java Canvas/Activity interface and a Chaquopy ARM64 Python runtime. Gradle copies `core.py`, `science.py`, `storage.py`, `mobile.py` and the version module from the authoritative package; no parallel event/science/database implementation is maintained.
+
+`mobile.py` adapts public Android observations, preserves schemas 1.0/1.1 and SQLite v2, and emits bounded rendering packets with classification colors and deterministic visual scores. One foreground executor owns Python/SQLite; a scheduled job samples only after explicit opt-in. Activity pause cancels sampling; destruction drains the worker and closes memory. Rendering is capped at 256 objects and 10–30 fps. Android's system document picker supplies explicit JSON sources. Imports are prevalidated, immutable and protected from rolling retention. Mobile history can include multiple scientific classes, each labeled; live sampling emits no simulations.
+
+Android app CPU utilization is `min(100, 100 * delta_app_cpu_ms / delta_elapsed_ms / reported_logical_processors)`, labeled DERIVED with recorded inputs. RAM/storage used percent is `100 * (total - available) / total`. GPU load, VRAM, device-wide CPU and other unsupported sensors are unavailable. Android does not load Windows APIs, run CUDA benchmarks, inventory other processes or require an AI service. The desktop retains its broader verified capabilities. See INSTALLATION.md for the matrix and EVIDENCE/MISSION-002A-FINAL-VERIFICATION.json for measured package results.
 
 Mission 002 extends the verified Python / PySide6 / SQLite application. Mission 001 documents are preserved in `RELEASES/0.1.0-alpha.1`; its tests, private database, evidence and artifacts remain intact.
 

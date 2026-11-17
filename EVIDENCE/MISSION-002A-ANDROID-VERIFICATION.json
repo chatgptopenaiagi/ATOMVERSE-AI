@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "apk_sha256": "5b3f29266d2f4134c6037dbf86a7f559b401ec87af8f86ae625e0cd838075b12",
+  "checks": {
+    "arm64_only_and_runtime_notices": true,
+    "release_metadata_signature_no_network_permission": true,
+    "installed_arm64_abi": true,
+    "normal_launcher_and_actual_buttons": true
+  },
+  "device": {
+    "sdk": "37",
+    "abis": "x86_64,arm64-v8a",
+    "native_bridge": "libndk_translation.so",
+    "physical_device": false,
+    "description": "Owned API 37 Google Play x86_64 emulator running the ARM64 APK through libndk_translation"
+  },
+  "runtime": {
+    "last_paint_ms": 0.0568,
+    "frames": 168,
+    "samples": 4,
+    "status": "PASS",
+    "checks": {
+      "shared_python_core_started": true,
+      "demo_label": true,
+      "demo_isolated": true,
+      "no_automatic_observation": true,
+      "touch_rotation": true,
+      "touch_pinch_zoom": true,
+      "live_samples": true,
+      "actual_device_ram": true,
+      "app_scoped_derived_cpu": true,
+      "unsupported_gpu_is_unavailable": true,
+      "sqlite_integrity": true,
+      "persisted_live_history": true,
+      "document_export_path": true,
+      "desktop_history_import": true,
+      "imported_event_ids_preserved": true,
+      "malformed_import_rejected": true,
+      "recorded_replay_label": true,
+      "timeline_seek": true,
+      "rendered_frames": true,
+      "worker_clean_shutdown": true
+    },
+    "elapsed_ms": 13307,
+    "supported_abis": [
+      "x86_64",
+      "arm64-v8a"
+    ],
+    "sdk": 37
+  },
+  "cross_platform": {
+    "desktop_to_android_immutable_events": 9,
+    "android_to_desktop_validated_events": 149,
+    "all_five_classes_preserved": true,
+    "desktop_sqlite_and_export_equal": true
+  },
+  "shared_source_sha256": {
+    "__init__.py": "c7fe7f27597952e1746d4a6085802aa71708e53f990a87453589abf68c9aade2",
+    "core.py": "ca81d875e1635d402bdc76e8ac3ea1303dc6b12a6bdedc25f2361b0903fba66f",
+    "science.py": "a345135841c5a4b23a477c75d77831f023db5785ecffc1b91ac4e9bbc5eebb2e",
+    "storage.py": "f624ca7eac479eb0314e0303c5272a01db6bf7259decff8a29fe983a7fee93e1",
+    "mobile.py": "cce28f80df475946ee5d60dd8da3e8c6aa9d370d66f09c180afddcd6f59026a3"
+  },
+  "document_picker": {
+    "export_via_system_picker": true,
+    "export_readback_events": 159,
+    "import_via_system_picker": true,
+    "imported_history_label": true,
+    "all_five_classes_preserved": true,
+    "early_readback_retried_after_asynchronous_export_completed": true
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "version": "0.2.0-alpha.2",
+  "started_at_utc": "2026-11-17T17:28:44.215Z",
+  "packaged_executable": true,
+  "checks": {
+    "native_window_and_opt_in_startup": true,
+    "simulation_label_and_isolation": true,
+    "real_arx_import": 38,
+    "continuous_cpu_and_memory_sampling": true,
+    "live_values_drive_deterministic_visual_changes": true,
+    "gpu_telemetry": {
+      "classification": "OBSERVED",
+      "metric_names": [
+        "utilization_pct",
+        "vram_used_bytes",
+        "vram_total_bytes",
+        "temperature_c",
+        "power_w",
+        "clock_mhz"
+      ],
+      "unavailable": {}
+    },
+    "real_windows_process_relationships": 24,
+    "cpu_benchmark_passed": {
+      "checksum": {
+        "unit": "count",
+        "value": 98304.0
+      },
+      "duration_ms": {
+        "unit": "ms",
+        "value": 2004.2228999991494
+      },
+      "iterations": {
+        "unit": "count",
+        "value": 265
+      },
+      "mean_iteration_ms": {
+        "unit": "ms",
+        "value": 7.563105283015658
+      },
+      "throughput_gflops": {
+        "unit": "GFLOP/s",
+        "value": 0.00866522381318334
+      }
+    },
+    "gpu_benchmark_passed": {
+      "allocated_peak_mib": {
+        "unit": "MiB",
+        "value": 9.125
+      },
+      "checksum": {
+        "unit": "count",
+        "value": 65536.0
+      },
+      "duration_ms": {
+        "unit": "ms",
+        "value": 300.03450000003795
+      },
+      "iterations": {
+        "unit": "count",
+        "value": 3797
+      },
+      "mean_iteration_ms": {
+        "unit": "ms",
+        "value": 0.07901883065579088
+      },
+      "throughput_gflops": {
+        "unit": "GFLOP/s",
+        "value": 424.63842759410625
+      }
+    },
+    "bounded_observer_overhead_and_responsiveness": true,
+    "scientific_table_and_filter": true,
+    "process_galaxy_inspection": true,
+    "navigation_pause_and_evidence_inspection": true,
+    "historical_comparison_with_input_references": true,
+    "recorded_replay_without_database_mutation": true,
+    "json_export_and_provenance_readback": 1302,
+    "sqlite_integrity": true,
+    "optional_ai_unavailable_does_not_disable_application": true,
+    "observer_restart_and_shutdown_while_active": true,
+    "clean_shutdown": true
+  },
+  "status": "PASS",
+  "error": null,
+  "elapsed_s": 37.133618200001365,
+  "retained_events": 1386,
+  "benchmarks": [
+    {
+      "component": "cpu",
+      "status": "PASS",
+      "metrics": {
+        "checksum": {
+          "unit": "count",
+          "value": 98304.0
+        },
+        "duration_ms": {
+          "unit": "ms",
+          "value": 2004.2228999991494
+        },
+        "iterations": {
+          "unit": "count",
+          "value": 265
+        },
+        "mean_iteration_ms": {
+          "unit": "ms",
+          "value": 7.563105283015658
+        },
+        "throughput_gflops": {
+          "unit": "GFLOP/s",
+          "value": 0.00866522381318334
+        }
+      },
+      "configuration": {
+        "backend": "stdlib-matrix",
+        "device": "AMD64",
+        "dtype": "python-float",
+        "kind": "cpu",
+        "max_wall_seconds": 30,
+        "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+        "python": "3.14.9",
+        "seconds": 2.0,
+        "size": 32,
+        "synchronized": true,
+        "threads": 1,
+        "warmup_iterations": 1
+      }
+    },
+    {
+      "component": "gpu",
+      "status": "PASS",
+      "metrics": {
+        "allocated_peak_mib": {
+          "unit": "MiB",
+          "value": 9.125
+        },
+        "checksum": {
+          "unit": "count",
+          "value": 65536.0
+        },
+        "duration_ms": {
+          "unit": "ms",
+          "value": 300.03450000003795
+        },
+        "iterations": {
+          "unit": "count",
+          "value": 3797
+        },
+        "mean_iteration_ms": {
+          "unit": "ms",
+          "value": 0.07901883065579088
+        },
+        "throughput_gflops": {
+          "unit": "GFLOP/s",
+          "value": 424.63842759410625
+        }
+      },
+      "configuration": {
+        "backend": "pytorch",
+        "cuda": "13.4",
+        "cudnn": 92600,
+        "device": "NVIDIA GeForce RTX 3050",
+        "dtype": "float32",
+        "kind": "gpu",
+        "max_wall_seconds": 30,
+        "python": "3.15.2",
+        "seconds": 0.3,
+        "size": 256,
+        "synchronized": true,
+        "tensor_bytes": 786432,
+        "tf32": false,
+        "torch": "2.15.0+cu134",
+        "vram_reserve_mib": 1536,
+        "warmup_iterations": 1
+      }
+    }
+  ],
+  "performance": {
+    "method": "15-second idle-observer phase and 15-second controlled-load phase; three owned 12-second CPU workloads plus bounded CPU/GPU benchmark; sampling 1 s, 24 processes, 30 fps; CPU normalized across logical processors",
+    "phases": {
+      "idle": {
+        "samples": 15,
+        "cpu_pct_system_mean": 4.389805448631146,
+        "working_set_bytes_max": 172793856,
+        "sample_duration_ms_p95": 295.1545999967493,
+        "scheduling_delay_ms_p95": 14.582600000721868,
+        "paint_ms_mean": 13.209640803928234,
+        "system_cpu_pct_min": 49.48717948717949,
+        "system_cpu_pct_max": 91.27604166666667
+      },
+      "active": {
+        "samples": 15,
+        "cpu_pct_system_mean": 4.635014800027213,
+        "working_set_bytes_max": 186908672,
+        "sample_duration_ms_p95": 174.2803000015556,
+        "scheduling_delay_ms_p95": 14.349299999594223,
+        "paint_ms_mean": 19.38026395549241,
+        "system_cpu_pct_min": 45.8498023715415,
+        "system_cpu_pct_max": 91.41025641025641
+      }
+    },
+    "gui_tick_delay_ms_p95": 24.84670000121696,
+    "gui_tick_delay_ms_max": 2331.1973000010767,
+    "paint_ms_p95": 26.736200001323596,
+    "frames": 694,
+    "particle_limit": 256,
+    "effective_particle_limit": 256,
+    "queue_capacity": 4,
+    "display_batches_dropped": 0
+  },
+  "external_verification": {
+    "exit_code": 0,
+    "executable_sha256": "abed85bb309f3486c9e424d6ac603a5cedec14c0c53b408495b60afe2bce97c3",
+    "all_exported_records_match_sqlite": true,
+    "legacy_records_preserved": 0,
+    "no_surviving_owned_processes": true,
+    "observed_child_processes": 10,
+    "sqlite_integrity": "ok",
+    "sqlite_version": 2,
+    "working_directory_outside_source": true
+  }
+}

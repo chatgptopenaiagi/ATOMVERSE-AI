@@ -1,7 +1,7 @@
 # ⚛️♾️ ATOMVERSE AI
 ## THE LIVING UNIVERSE OF COMPUTATIONAL INTELLIGENCE
 
-**0.2.0-alpha.1 — The Living Universe.** An experimental native Windows application that turns selected, real computational observations into inspectable visual structures and persistent history. Mission 002 continues the verified Mission 001 foundation.
+**0.2.0-alpha.2 — Multiplatform Expansion.** An experimental computational universe with a standalone Windows EXE, Python wheel and native Android ARM64 APK. All three share the same Python scientific core. Mission 002A preserves the verified Mission 001/002 foundation and the original 0.2.0-alpha.1 portable ZIP byte-for-byte. New Android functionality requires this incremented prerelease.
 
 ATOMVERSE AI is a living computational universe that transforms real hardware telemetry, AI activity, source code, benchmarks and software events into interactive visual structures, measurable simulations and persistent knowledge.
 
@@ -54,6 +54,8 @@ Target: Windows 11 x64, PowerShell 7. Hardware and installed software must be fr
 
 ### Launch
 
+For the three new distributions, see [installation instructions and platform compatibility](INSTALLATION.md) and the [0.2.0-alpha.2 prerelease](https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/tag/v0.2.0-alpha.2). Android uses native touch controls and public Android sensors; it does not claim Windows process monitoring or CUDA support. Its packaged ARM64 runtime is tested on an emulator using Android's native translation layer; physical-device coverage remains outstanding. The wheel's `py3-none-any` tag describes pure Python contents; the desktop GUI is supported on Windows 11 x64 with Python 3.14/3.15.
+
 Download the complete portable ZIP from [v0.2.0-alpha.1](https://github.com/chatgptopenaiagi/ATOMVERSE-AI/releases/tag/v0.2.0-alpha.1), extract it, and open **ATOMVERSE-AI.exe**. Keep its folder together. On the mission workstation the final package is under **dist/releases/0.2.0-alpha.1/ATOMVERSE-AI/**; `scripts/launch.ps1` selects it when present.
 
 A new history begins in visibly labeled simulation mode. Review Settings, then click **Start live observer**. CPU, RAM, disk, available NVIDIA metrics and permitted process metadata update automatically. Stop live observer ends collection; Pause motion only pauses rendering. Click an entity for its evidence. Use Process Galaxy for relationships, Scientific Data for numbers, and Computational Memory for replay/comparison/integrity checks.
@@ -79,6 +81,8 @@ Only explicit sources are ingested. No private-session interception, command-lin
 Public commits contain reviewed source and sanitized evidence. Raw local reports, models, databases, credentials, and workstation-specific paths belong outside version control.
 
 ### Development status
+
+Mission 002A adds an installed `atomverse-ai` entry point, standalone packaging, Android foreground observation, shared-core history exchange and per-platform acceptance evidence. Android build instructions are in [SOFTWARE/android/README.md](SOFTWARE/android/README.md). Mission 002 documentation is archived under [RELEASES/0.2.0-alpha.1](RELEASES/0.2.0-alpha.1); earlier evidence and artifacts remain unchanged. See [Mission 002A verification](EVIDENCE/MISSION-002A-FINAL-VERIFICATION.json) for exact package hashes and tested scope.
 
 Mission 001 documentation is archived under [RELEASES/0.1.0-alpha.1](RELEASES/0.1.0-alpha.1), and its evidence remains intact. Mission 002 results and remaining work are recorded in the final report, [CHANGELOG](CHANGELOG.md), and [roadmap](ROADMAP.md).
 

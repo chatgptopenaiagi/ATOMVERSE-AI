@@ -24,7 +24,7 @@ if database.exists():
         baseline = dict(db.execute('SELECT id,body FROM events'))
 started = time.monotonic()
 process = subprocess.Popen([str(args.exe.resolve()), '--data-dir', str(args.data.resolve()), '--gpu-python', args.gpu_python,
-    '--import-arx', str(args.arx.resolve()), '--verify-mission002', str(args.output.resolve())], creationflags=subprocess.CREATE_NO_WINDOW)
+    '--import-arx', str(args.arx.resolve()), '--verify-mission002', str(args.output.resolve())], cwd=args.output.resolve(), creationflags=subprocess.CREATE_NO_WINDOW)
 children = {}
 try:
     while process.poll() is None and time.monotonic()-started < 110:
@@ -51,7 +51,8 @@ try:
     assert not survivors, 'Owned workers survived application shutdown'
     report['external_verification'] = {'exit_code': process.returncode, 'executable_sha256': hashlib.sha256(args.exe.read_bytes()).hexdigest(),
         'all_exported_records_match_sqlite': True, 'legacy_records_preserved': len(baseline), 'no_surviving_owned_processes': True,
-        'observed_child_processes': len(children), 'sqlite_integrity': 'ok', 'sqlite_version': 2}
+        'observed_child_processes': len(children), 'sqlite_integrity': 'ok', 'sqlite_version': 2,
+        'working_directory_outside_source': True}
     (args.output/'gui-verification.json').write_text(json.dumps(report, indent=2))
     print(json.dumps({'status':'PASS','elapsed_s':time.monotonic()-started,'external_verification':report['external_verification']}))
 finally:

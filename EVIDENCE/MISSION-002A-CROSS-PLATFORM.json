@@ -1,0 +1,21 @@
+{
+  "desktop_to_android_immutable_events": 9,
+  "android_to_desktop_validated_events": 149,
+  "all_five_classes_preserved": true,
+  "desktop_sqlite_and_export_equal": true,
+  "android_system_document_picker": {
+    "export_via_system_picker": true,
+    "export_readback_events": 159,
+    "import_via_system_picker": true,
+    "imported_history_label": true,
+    "all_five_classes_preserved": true,
+    "early_readback_retried_after_asynchronous_export_completed": true
+  },
+  "installed_wheel_android_records_exchanged": 149,
+  "shared_source_sha256": {
+    "core.py": "ca81d875e1635d402bdc76e8ac3ea1303dc6b12a6bdedc25f2361b0903fba66f",
+    "science.py": "a345135841c5a4b23a477c75d77831f023db5785ecffc1b91ac4e9bbc5eebb2e",
+    "storage.py": "f624ca7eac479eb0314e0303c5272a01db6bf7259decff8a29fe983a7fee93e1",
+    "mobile.py": "cce28f80df475946ee5d60dd8da3e8c6aa9d370d66f09c180afddcd6f59026a3"
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "mission": "002A",
+  "status": "PASS",
+  "baseline_tests": 79,
+  "total_tests": 85,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_s": 9.448,
+  "tests": [
+    {
+      "name": "test_energy_is_reproducible_and_dimensionless",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_clamping_and_missing_metrics",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[nan]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[inf]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[-1]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[101]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[True]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[50]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_reject_invalid_percentage[10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_schema_rejections[schema_version-2.0]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_schema_rejections[status-SUCCESS]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_schema_rejections[data_kind-real-ish]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_schema_rejections[component-network]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_schema_rejections[timestamp_utc-2026-01-01T00:00:00]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_schema_rejections[message-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.002
+    },
+    {
+      "name": "test_wrong_units_and_forged_visual",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_database_immutable_and_reopen",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.052
+    },
+    {
+      "name": "test_transaction_rolls_back_on_limit",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.04
+    },
+    {
+      "name": "test_replay_order_does_not_mutate",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_json_roundtrip_and_csv_formula_protection",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.04
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[malformed]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[nonfinite]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[encoding]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_json_and_input_bounds[oversized]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_arx_measurements_provenance_and_idempotency",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_arx_rejects_new_contract[0.2]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_arx_rejects_new_contract[1.0]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_arx_rejects_new_contract[None]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_arx_report_preserved",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.018
+    },
+    {
+      "name": "test_demo_never_claims_observation",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.013
+    },
+    {
+      "name": "test_explicit_source_metadata_ignores_private_tree",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.005
+    },
+    {
+      "name": "test_python_discovery_and_invalid_target",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.14
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[https://example.com/v1]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[http://127.0.0.1.evil/v1]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[http://user:pass@localhost/v1]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_model_boundary_refuses_nonlocal_or_credentials[http://localhost/v1?secret=yes]",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_cpu_worker_actual_output_and_invalid_workload",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.59
+    },
+    {
+      "name": "test_published_json_schema_matches_generated_events",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.266
+    },
+    {
+      "name": "test_loopback_model_contract_and_interpretation_label",
+      "class": "TESTS.test_core",
+      "elapsed_s": 0.551
+    },
+    {
+      "name": "test_gui_sources_and_mode_isolation",
+      "class": "TESTS.test_gui",
+      "elapsed_s": 0.424
+    },
+    {
+      "name": "test_gui_camera_selection_pause_and_settings",
+      "class": "TESTS.test_gui",
+      "elapsed_s": 0.261
+    },
+    {
+      "name": "test_gui_benchmark_cancel_persists_accurate_state",
+      "class": "TESTS.test_gui",
+      "elapsed_s": 0.432
+    },
+    {
+      "name": "test_gui_replay_filter_and_shutdown",
+      "class": "TESTS.test_gui",
+      "elapsed_s": 0.188
+    },
+    {
+      "name": "test_gui_hard_deadline_failure",
+      "class": "TESTS.test_gui",
+      "elapsed_s": 0.358
+    },
+    {
+      "name": "test_gui_shutdown_terminates_active_worker",
+      "class": "TESTS.test_gui",
+      "elapsed_s": 0.288
+    },
+    {
+      "name": "test_failed_executable_is_recorded_as_failure",
+      "class": "TESTS.test_gui",
+      "elapsed_s": 0.396
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[OBSERVED]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.053
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[DERIVED]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.052
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[SIMULATED]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.051
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[AI_INTERPRETED]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.05
+    },
+    {
+      "name": "test_scientific_categories_roundtrip[UNAVAILABLE]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.052
+    },
+    {
+      "name": "test_published_scientific_schema_matches_real_collector",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.052
+    },
+    {
+      "name": "test_invalid_science_rejected[missing_metadata]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[fake_derived]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[ai_measurement]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[sim_observed]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[bad_relation]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[bad_unit]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[incomplete_process]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_invalid_science_rejected[incomplete_core]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_counter_deltas_and_reset",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.0
+    },
+    {
+      "name": "test_configuration_bounds[config0]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_configuration_bounds[config1]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_configuration_bounds[config2]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_configuration_bounds[config3]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_configuration_bounds[config4]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_migration_preserves_bytes_and_backup",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.064
+    },
+    {
+      "name": "test_retention_protects_legacy_and_linked_evidence",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.05
+    },
+    {
+      "name": "test_retention_row_limit_and_replay_immutable",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.107
+    },
+    {
+      "name": "test_retention_cannot_exceed_configured_cap_with_protected_rows",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.059
+    },
+    {
+      "name": "test_comparison_requires_comparable_source_and_records_inputs",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.002
+    },
+    {
+      "name": "test_ai_summary_excludes_process_metadata_and_rejects_remote",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_local_ai_protocol_preserves_classification_and_provenance[]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.522
+    },
+    {
+      "name": "test_local_ai_protocol_preserves_classification_and_provenance[/v1]",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.526
+    },
+    {
+      "name": "test_optional_adapters_versioned_and_idempotent",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.063
+    },
+    {
+      "name": "test_real_windows_sampling_and_permissions",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.066
+    },
+    {
+      "name": "test_real_process_parent_identity_and_termination",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.189
+    },
+    {
+      "name": "test_gpu_failure_is_explicit_and_other_sources_continue",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 0.007
+    },
+    {
+      "name": "test_live_gui_updates_labels_queue_bounds_and_shutdown",
+      "class": "TESTS.test_mission002",
+      "elapsed_s": 2.246
+    },
+    {
+      "name": "test_mobile_formulas_provenance_and_unavailability",
+      "class": "TESTS.test_mobile_packaging",
+      "elapsed_s": 0.056
+    },
+    {
+      "name": "test_mobile_roundtrip_replay_and_atomic_rejection",
+      "class": "TESTS.test_mobile_packaging",
+      "elapsed_s": 0.102
+    },
+    {
+      "name": "test_mobile_bounds_missing_sensors_and_demo_isolation",
+      "class": "TESTS.test_mobile_packaging",
+      "elapsed_s": 0.351
+    },
+    {
+      "name": "test_android_activity_recreation_serializes_first_database_open",
+      "class": "TESTS.test_mobile_packaging",
+      "elapsed_s": 0.045
+    },
+    {
+      "name": "test_installed_worker_command_uses_package_module",
+      "class": "TESTS.test_mobile_packaging",
+      "elapsed_s": 0.001
+    },
+    {
+      "name": "test_desktop_routes_mobile_history_without_relabeling",
+      "class": "TESTS.test_mobile_packaging",
+      "elapsed_s": 0.101
+    }
+  ]
+}

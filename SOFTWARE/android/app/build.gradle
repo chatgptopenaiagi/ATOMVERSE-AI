@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+
+def shared = ['__init__.py', 'core.py', 'science.py', 'storage.py', 'mobile.py']
+def syncCore = tasks.register('syncSharedCore', Sync) {
+    from('../../atomverse') { include shared }
+    into(layout.buildDirectory.dir('shared-python/atomverse'))
+}
+
+android {
+    namespace 'com.atomverse.ai'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.atomverse.ai'
+        minSdk 24
+        targetSdk 36
+        versionCode 202
+        versionName rootProject.file('../../VERSION').text.trim()
+        ndk { abiFilters 'arm64-v8a' }
+        testInstrumentationRunner 'com.atomverse.ai.AcceptanceRunner'
+    }
+    signingConfigs {
+        release {
+            storeFile file(System.getenv('ATOMVERSE_KEYSTORE') ?: 'missing-keystore')
+            storePassword System.getenv('ATOMVERSE_KEY_PASSWORD')
+            keyAlias 'atomverse'
+            keyPassword System.getenv('ATOMVERSE_KEY_PASSWORD')
+        }
+    }
+    buildTypes { release { signingConfig signingConfigs.release; minifyEnabled false; debuggable false } }
+    testBuildType 'release'
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    sourceSets { main.assets.srcDirs += ['../../../LICENSES'] }
+}
+
+chaquopy {
+    defaultConfig {
+        version = '3.14'
+        buildPython(System.getenv('ATOMVERSE_BUILD_PYTHON') ?: 'python')
+    }
+    sourceSets { main { srcDir(layout.buildDirectory.dir('shared-python')) } }
+}
+tasks.configureEach { if (name.contains('Python') && name != 'syncSharedCore') dependsOn syncCore }

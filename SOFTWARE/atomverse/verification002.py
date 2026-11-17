@@ -11,6 +11,7 @@ from .core import atomic_write, export_events, utc_now, validate_event
 from .live_controller import command
 from .science import classification
 from .storage import recent, compare
+from . import __version__
 
 
 def percentile(values, percent):
@@ -23,7 +24,7 @@ def verify(app, w, output, arx_path):
     state = {'step': 0, 'time': time.monotonic(), 'last_tick': time.monotonic(), 'phase': 'setup'}
     started = time.monotonic()
     timer = QTimer(w); timer.setInterval(50); w.verification_timer = timer
-    report = {'version': '0.2.0-alpha.1', 'started_at_utc': utc_now(), 'packaged_executable': bool(getattr(sys, 'frozen', False)), 'checks': checks}
+    report = {'version': __version__, 'started_at_utc': utc_now(), 'packaged_executable': bool(getattr(sys, 'frozen', False)), 'checks': checks}
     performance = {'method': '15-second idle-observer phase and 15-second controlled-load phase; three owned 12-second CPU workloads plus bounded CPU/GPU benchmark; sampling 1 s, 24 processes, 30 fps; CPU normalized across logical processors', 'phases': {}}
     def phase_stats(name):
         rows = [p for p in packets if p['phase'] == name]
